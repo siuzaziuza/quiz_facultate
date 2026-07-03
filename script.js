@@ -37,9 +37,7 @@ function startQuiz() {
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("quiz-screen").style.display = "block";
 
-    currentQuestion = 0;
-
-    showQuestion();
+    document.getElementById("question").innerHTML = "TEST";
 }
 
 function showQuestion() {
