@@ -34,6 +34,8 @@ const questions = [
 let currentQuestion = 0;
 
 function startQuiz() {
+    alert("Funcția startQuiz merge!");
+}
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("quiz-screen").style.display = "block";
 
