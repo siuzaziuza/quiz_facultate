@@ -1,46 +1,140 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #4f46e5, #06b6d4);
-    min-height: 100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 60px auto;
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    text-align: center;
+body{
+
+    background:linear-gradient(135deg,#4facfe,#00c6fb);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
 }
 
-h1 {
-    color: #4f46e5;
+.container{
+
+    width:100%;
+
+    max-width:850px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
 }
 
-p {
-    color: #555;
-    font-size: 18px;
-    line-height: 1.6;
+h1{
+
+    color:#2457ff;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
 }
 
-button {
-    background: #4f46e5;
-    color: white;
-    border: none;
-    padding: 15px 35px;
-    border-radius: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
+h2{
+
+    margin:25px 0;
+
+    text-align:center;
+
 }
 
-button:hover {
-    background: #3730a3;
+p{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#555;
+
 }
 
-#quiz {
-    margin-top: 40px;
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2457ff;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    background:#1742c8;
+
+    transform:scale(1.02);
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+#progress-bar{
+
+    width:0%;
+
+    height:100%;
+
+    background:#2457ff;
+
+    transition:.4s;
+
+}
+
+#question-number{
+
+    font-weight:bold;
+
+    color:#2457ff;
+
+}
+
+#answers button{
+
+    margin-top:12px;
+
 }
