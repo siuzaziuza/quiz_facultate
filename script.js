@@ -1,35 +1,96 @@
-let currentQuestion = 0;
-
 const questions = [
+{
+    question: "Ce materie îți place cel mai mult?",
+    answers: [
+        "Matematică",
+        "Informatică",
+        "Biologie",
+        "Istorie",
+        "Română"
+    ]
+},
+{
+    question: "Cum preferi să lucrezi?",
+    answers: [
+        "Singur",
+        "În echipă",
+        "Nu contează",
+        "Cu oamenii",
+        "Pe calculator"
+    ]
+},
 {
     question: "Ce activitate îți place cel mai mult?",
     answers: [
-        "Rezolv probleme logice",
+        "Rezolv probleme",
         "Ajut oamenii",
-        "Desenez sau creez",
-        "Coordonez echipe",
-        "Lucrez cu bani"
+        "Organizez echipe",
+        "Desenez",
+        "Fac sport"
     ]
 }
 ];
 
-function startQuiz() {
+let currentQuestion = 0;
 
-const quiz = document.getElementById("quiz");
+function startQuiz(){
 
-quiz.innerHTML = `
-<h2>${questions[currentQuestion].question}</h2>
+    document.getElementById("start-screen").style.display="none";
 
-<button>${questions[currentQuestion].answers[0]}</button><br><br>
+    document.getElementById("quiz-screen").style.display="block";
 
-<button>${questions[currentQuestion].answers[1]}</button><br><br>
+    showQuestion();
 
-<button>${questions[currentQuestion].answers[2]}</button><br><br>
+}
 
-<button>${questions[currentQuestion].answers[3]}</button><br><br>
+function showQuestion(){
 
-<button>${questions[currentQuestion].answers[4]}</button>
+    const q=questions[currentQuestion];
 
-`;
+    document.getElementById("question-number").innerHTML=
+    `Întrebarea ${currentQuestion+1} din ${questions.length}`;
+
+    document.getElementById("question").innerHTML=q.question;
+
+    document.getElementById("progress-bar").style.width=
+    ((currentQuestion)/questions.length*100)+"%";
+
+    let html="";
+
+    q.answers.forEach(answer=>{
+
+        html+=`<button onclick="nextQuestion()">${answer}</button>`;
+
+    });
+
+    document.getElementById("answers").innerHTML=html;
+
+}
+
+function nextQuestion(){
+
+    currentQuestion++;
+
+    if(currentQuestion<questions.length){
+
+        showQuestion();
+
+    }else{
+
+        document.getElementById("quiz-screen").style.display="none";
+
+        document.getElementById("result-screen").style.display="block";
+
+        document.getElementById("progress-bar").style.width="100%";
+
+        document.getElementById("results").innerHTML=`
+        <h2>🎉 Felicitări!</h2>
+
+        <p>Ai terminat testul.</p>
+
+        <p>În etapa următoare vom calcula automat Top 5 facultăți.</p>
+        `;
+
+    }
 
 }
