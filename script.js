@@ -427,7 +427,7 @@ function startQuiz() {
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("quiz-screen").style.display = "block";
 
-    document.getElementById("question").innerHTML = "TEST";
+    showQuestion();
 }
 
 function showQuestion() {
