@@ -422,6 +422,119 @@ const questions = [
 ];
 
 let currentQuestion = 0;
+const scores = {
+    // INFORMATICĂ ȘI TEHNOLOGIE
+    informatica: 0,
+    informaticaAplicata: 0,
+    informaticaIndustriala: 0,
+    inteligentaArtificiala: 0,
+    calculatoare: 0,
+    automatica: 0,
+    securitateCibernetica: 0,
+    informaticaEconomica: 0,
+    dataScience: 0,
+
+    // MATEMATICĂ ȘI ȘTIINȚE EXACTE
+    matematica: 0,
+    matematicaInformatica: 0,
+    statistica: 0,
+    fizica: 0,
+    chimie: 0,
+
+    // INGINERIE
+    inginerieMecanica: 0,
+    mecatronica: 0,
+    robotica: 0,
+    inginerieElectrica: 0,
+    energetica: 0,
+    electronicaTelecomunicatii: 0,
+    inginerieMedicala: 0,
+    inginerieAerospatiala: 0,
+    autovehiculeRutiere: 0,
+    inginerieIndustriala: 0,
+    ingineriaMaterialelor: 0,
+    inginerieChimica: 0,
+    ingineriaMediului: 0,
+    constructii: 0,
+    instalatiiConstructii: 0,
+    geodezie: 0,
+
+    // MEDICINĂ ȘI SĂNĂTATE
+    medicina: 0,
+    medicinaDentara: 0,
+    farmacie: 0,
+    asistentaMedicala: 0,
+    nutritieDietetica: 0,
+    kinetoterapie: 0,
+
+    // BIOLOGIE ȘI ȘTIINȚELE NATURII
+    biologie: 0,
+    biochimie: 0,
+    biotehnologii: 0,
+    geologie: 0,
+    stiintaMediului: 0,
+
+    // ECONOMIE ȘI AFACERI
+    economie: 0,
+    afaceriInternationale: 0,
+    finanteBanci: 0,
+    contabilitate: 0,
+    management: 0,
+    marketing: 0,
+    administrareaAfacerilor: 0,
+    ciberneticaEconomica: 0,
+
+    // DREPT ȘI ADMINISTRAȚIE
+    drept: 0,
+    administratiePublica: 0,
+    stiintePolitice: 0,
+    relatiiInternationale: 0,
+
+    // PSIHOLOGIE ȘI ȘTIINȚE SOCIALE
+    psihologie: 0,
+    sociologie: 0,
+    resurseUmane: 0,
+    asistentaSociala: 0,
+
+    // EDUCAȚIE
+    pedagogie: 0,
+    invatamantPrimar: 0,
+    educatieTimpurie: 0,
+
+    // COMUNICARE ȘI ȘTIINȚE UMANISTE
+    jurnalism: 0,
+    comunicarePR: 0,
+    publicitate: 0,
+    limbiModerneAplicate: 0,
+    litere: 0,
+    istorie: 0,
+    filosofie: 0,
+
+    // ARHITECTURĂ ȘI ARTE
+    arhitectura: 0,
+    arhitecturaInterior: 0,
+    urbanism: 0,
+    design: 0,
+    artePlastice: 0,
+    fotografieVideo: 0,
+    cinematografie: 0,
+    teatru: 0,
+    muzica: 0,
+
+    // AGRICULTURĂ ȘI NATURĂ
+    agricultura: 0,
+    horticultura: 0,
+    silvicultura: 0,
+    zootehnie: 0,
+    peisagistica: 0,
+    inginerieAlimentara: 0,
+
+    // SPORT ȘI TURISM
+    educatieFizicaSport: 0,
+    sportPerformanta: 0,
+    geografiaTurismului: 0,
+    turism: 0
+};
 
 function startQuiz() {
     document.getElementById("start-screen").style.display = "none";
