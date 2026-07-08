@@ -4,15 +4,67 @@ const questions = [
     // Materii și interese academice
 
     {
-        question: "Ce materie îți place cel mai mult la școală?",
-        answers: [
-            "Matematică",
-            "Biologie",
-            "Informatică",
-            "Limba română / Limbi străine",
-            "Desen / Arte"
-        ]
-    },
+    question: "Ce materie îți place cel mai mult la școală?",
+    answers: [
+        {
+            text: "Matematică",
+            scores: {
+                matematica: 5,
+                matematicaInformatica: 4,
+                statistica: 4,
+                ciberneticaEconomica: 3,
+                fizica: 2,
+                inginerieMecanica: 1
+            }
+        },
+
+        {
+            text: "Biologie",
+            scores: {
+                biologie: 5,
+                medicina: 4,
+                biochimie: 4,
+                biotehnologii: 4,
+                farmacie: 3,
+                nutritieDietetica: 2
+            }
+        },
+
+        {
+            text: "Informatică",
+            scores: {
+                informatica: 5,
+                informaticaAplicata: 5,
+                inteligentaArtificiala: 4,
+                calculatoare: 4,
+                securitateCibernetica: 3,
+                informaticaEconomica: 2
+            }
+        },
+
+        {
+            text: "Limba română / Limbi străine",
+            scores: {
+                litere: 5,
+                limbiModerneAplicate: 5,
+                jurnalism: 3,
+                comunicarePR: 3,
+                drept: 2
+            }
+        },
+
+        {
+            text: "Desen / Arte",
+            scores: {
+                artePlastice: 5,
+                design: 5,
+                arhitecturaInterior: 4,
+                arhitectura: 3,
+                fotografieVideo: 3
+            }
+        }
+    ]
+},
 
     {
         question: "Ce tip de subiect îți stârnește cel mai mult curiozitatea?",
@@ -557,17 +609,34 @@ function showQuestion() {
 
     let html = "";
 
-    q.answers.forEach(answer => {
-        html += `
-            <button onclick="nextQuestion()">
-                ${answer}
-            </button>
-        `;
-    });
+q.answers.forEach((answer, index) => {
+    const answerText =
+        typeof answer === "string" ? answer : answer.text;
 
-    document.getElementById("answers").innerHTML = html;
+    html += `
+        <button onclick="selectAnswer(${index})">
+            ${answerText}
+        </button>
+    `;
+});
+
+document.getElementById("answers").innerHTML = html;
 }
+function selectAnswer(answerIndex) {
+    const selectedAnswer =
+        questions[currentQuestion].answers[answerIndex];
 
+    if (
+        typeof selectedAnswer === "object" &&
+        selectedAnswer.scores
+    ) {
+        for (const profile in selectedAnswer.scores) {
+            scores[profile] += selectedAnswer.scores[profile];
+        }
+    }
+
+    nextQuestion();
+}
 function nextQuestion() {
 
     currentQuestion++;
