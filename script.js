@@ -67,15 +67,72 @@ const questions = [
 },
 
     {
-        question: "Ce tip de subiect îți stârnește cel mai mult curiozitatea?",
-        answers: [
-            "Cum funcționează tehnologia",
-            "Cum funcționează corpul uman",
-            "Cum funcționează economia și afacerile",
-            "Cum gândesc și se comportă oamenii",
-            "Cum sunt create operele artistice"
-        ]
-    },
+    question: "Ce tip de subiect îți stârnește cel mai mult curiozitatea?",
+    answers: [
+        {
+            text: "Cum funcționează tehnologia",
+            scores: {
+                informatica: 5,
+                informaticaAplicata: 4,
+                inteligentaArtificiala: 4,
+                calculatoare: 4,
+                automatica: 3,
+                robotica: 3,
+                mecatronica: 2
+            }
+        },
+        {
+            text: "Cum funcționează corpul uman",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                farmacie: 4,
+                biochimie: 4,
+                biotehnologii: 3,
+                asistentaMedicala: 3,
+                nutritieDietetica: 2,
+                kinetoterapie: 2
+            }
+        },
+        {
+            text: "Cum funcționează economia și afacerile",
+            scores: {
+                economie: 5,
+                afaceriInternationale: 4,
+                finanteBanci: 4,
+                administrareaAfacerilor: 4,
+                management: 3,
+                contabilitate: 3,
+                marketing: 2,
+                informaticaEconomica: 2
+            }
+        },
+        {
+            text: "Cum gândesc și se comportă oamenii",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                asistentaSociala: 3,
+                resurseUmane: 3,
+                pedagogie: 3,
+                stiintePolitice: 2,
+                comunicarePR: 2
+            }
+        },
+        {
+            text: "Cum sunt create operele artistice",
+            scores: {
+                artePlastice: 5,
+                design: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                muzica: 3,
+                teatru: 3,
+                arhitecturaInterior: 2
+            }
+        }
+    ]
+},
 
     {
         question: "Dacă ai avea o zi întreagă pentru a învăța ceva nou, ce ai alege?",
