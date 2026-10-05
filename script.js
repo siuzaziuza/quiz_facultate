@@ -2229,321 +2229,382 @@ const questions = [
     // CAPITOLUL 7
 // Sport, agricultură și științele naturii
 
-    {
+   
+{
     question: "Ce tip de activitate ți-ar plăcea cel mai mult să faci în mod constant?",
     answers: [
         {
-            text: "Să mă antrenez și să îmi depășesc limitele fizice",
+            text: "Să rezolv probleme și să creez soluții folosind logica, tehnologia sau știința",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                matematicaInformatica: 4,
+                automatica: 4,
+                inteligentaArtificiala: 4,
+                inginerie: 3
+            }
+        },
+        {
+            text: "Să lucrez direct cu oameni și să îi ajut să își rezolve problemele",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                drept: 4,
+                asistentaMedicala: 4,
+                asistentaSociala: 4,
+                pedagogie: 3
+            }
+        },
+        {
+            text: "Să organizez oameni, proiecte sau activități și să iau decizii",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                afaceriInternationale: 4,
+                resurseUmane: 4,
+                marketing: 3
+            }
+        },
+        {
+            text: "Să am o activitate practică, dinamică, în care să mă mișc și să îmi folosesc abilitățile fizice",
             scores: {
                 educatieFizicaSport: 5,
                 sportPerformanta: 5,
-                kinetoterapie: 3
+                kinetoterapie: 4,
+                inginerieMecanica: 3,
+                autovehiculeRutiere: 3,
+                ordinePublica: 3
             }
         },
         {
-            text: "Să lucrez cu plante, culturi și terenuri agricole",
+            text: "Să lucrez cu natura, animalele, mediul sau să studiez lumea din jurul meu",
             scores: {
-                agricultura: 5,
-                horticultura: 5,
-                agronomie: 5,
-                inginerieMediului: 3,
-                peisagistica: 3
-            }
-        },
-        {
-            text: "Să lucrez cu animale și să mă ocup de creșterea lor",
-            scores: {
-                zootehnie: 5,
-                biologie: 4,
-                medicinaVeterinara: 5,
-                agricultura: 3
-            }
-        },
-        {
-            text: "Să explorez natura, mediul și diferite locuri",
-            scores: {
-                geografie: 5,
-                geografiaTurismului: 5,
-                silvicultura: 4,
-                stiintaMediului: 4,
-                geologie: 3
-            }
-        },
-        {
-            text: "Să proiectez și să amenajez spații verzi sau peisaje",
-            scores: {
-                peisagistica: 5,
-                arhitectura: 4,
-                arhitecturaInterior: 4,
-                design: 4,
-                horticultura: 3
-            }
-        }
-    ]
-},
-
-    {
-    question: "În ce tip de mediu ți-ar plăcea cel mai mult să îți desfășori activitatea?",
-    answers: [
-        {
-            text: "Pe teren, în aer liber și în mijlocul naturii",
-            scores: {
-                silvicultura: 5,
+                biologie: 5,
                 stiintaMediului: 5,
-                geologia: 4,
                 agricultura: 4,
-                geografiaTurismului: 3
+                medicinaVeterinara: 4,
+                geografie: 4,
+                silvicultura: 4,
+                geologie: 3
             }
-        },
+        }
+    ]
+},
+   {
+    question: "În ce fel de mediu ai prefera să îți desfășori activitatea?",
+    answers: [
         {
-            text: "În ferme, sere sau pe terenuri agricole",
+            text: "Într-un mediu tehnic, unde pot lucra cu calculatoare, aparatură sau sisteme complexe",
             scores: {
-                agricultura: 5,
-                horticultura: 5,
-                zootehnie: 4,
-                peisagistica: 3,
-                inginerieAlimentara: 3
+                informatica: 5,
+                calculatoare: 5,
+                informaticaIndustriala: 4,
+                automatica: 4,
+                electronicaTelecomunicatii: 4,
+                inginerieElectrica: 3
             }
         },
         {
-            text: "Într-un mediu în care lucrez cu animale",
+            text: "Într-un mediu în care interacționez permanent cu oameni și comunic mult",
             scores: {
-                zootehnie: 5,
-                biologie: 5,
-                agricultura: 3,
-                stiintaMediului: 3
+                psihologie: 5,
+                drept: 5,
+                comunicarePR: 4,
+                jurnalism: 4,
+                resurseUmane: 4,
+                marketing: 3
             }
         },
         {
-            text: "Într-un mediu activ, unde mă pot mișca și lucra cu oamenii",
+            text: "Într-un mediu organizat, unde coordonez activități și iau decizii",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                contabilitate: 3
+            }
+        },
+        {
+            text: "Într-un mediu activ, practic, unde nu stau toată ziua la birou",
             scores: {
                 educatieFizicaSport: 5,
                 sportPerformanta: 5,
                 kinetoterapie: 4,
-                turism: 3,
-                geografiaTurismului: 3
+                inginerieMecanica: 4,
+                constructii: 3,
+                autovehiculeRutiere: 3,
+                ordinePublica: 3
             }
         },
         {
-            text: "Într-un spațiu în care pot proiecta și amenaja locuri",
+            text: "Într-un mediu în aer liber, în laborator sau în contact cu natura și lumea vie",
             scores: {
-                peisagistica: 5,
-                arhitectura: 4,
-                design: 4,
-                arhitecturaInterior: 4,
+                biologie: 5,
+                chimie: 4,
+                stiintaMediului: 5,
+                agricultura: 4,
+                medicinaVeterinara: 4,
+                geologie: 4,
+                silvicultura: 4
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce fel de rezultat te-ar face să simți că munca ta a meritat?",
+    answers: [
+        {
+            text: "Să creez ceva nou sau să găsesc o soluție la o problemă dificilă",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                calculatoare: 4,
+                matematica: 4,
+                inginerieMecanica: 4,
+                robotica: 4,
+                inventica: 3
+            }
+        },
+        {
+            text: "Să văd că am ajutat o persoană sau am schimbat ceva în bine pentru cineva",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                drept: 4,
+                asistentaSociala: 4,
+                pedagogie: 4
+            }
+        },
+        {
+            text: "Să văd că un proiect, o afacere sau o echipă funcționează datorită deciziilor mele",
+            scores: {
+                management: 5,
+                economie: 5,
+                administrareaAfacerilor: 5,
+                afaceriInternationale: 4,
+                marketing: 4,
+                resurseUmane: 4
+            }
+        },
+        {
+            text: "Să văd rezultate concrete, practice, pe care le pot observa imediat",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                constructii: 4,
+                autovehiculeRutiere: 5,
+                inginerieElectrica: 4,
+                sportPerformanta: 4,
+                educatieFizicaSport: 3
+            }
+        },
+        {
+            text: "Să descopăr, protejez sau îmbunătățesc ceva din natură și lumea vie",
+            scores: {
+                biologie: 5,
+                medicinaVeterinara: 5,
+                stiintaMediului: 5,
+                agricultura: 4,
+                geologie: 4,
+                silvicultura: 4,
                 horticultura: 3
             }
         }
     ]
 },
 
-    {
-    question: "Ce rezultat ți-ar aduce cea mai mare satisfacție?",
+   {
+    question: "Ce tip de provocare te-ar atrage cel mai mult?",
     answers: [
         {
-            text: "Să văd că am obținut o recoltă bună și am îmbunătățit o cultură",
+            text: "Să rezolv o problemă complexă folosind logica, analiza și cunoștințele mele",
             scores: {
-                agricultura: 5,
-                horticultura: 5,
-                inginerieAlimentara: 3,
-                peisagistica: 3
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 5,
+                calculatoare: 4,
+                dataScience: 4,
+                inteligentaArtificiala: 4
             }
         },
         {
-            text: "Să contribui la protejarea pădurilor și a naturii",
+            text: "Să găsesc cea mai bună soluție într-o situație care implică oameni și opinii diferite",
             scores: {
-                silvicultura: 5,
-                stiintaMediului: 5,
-                biologie: 4,
-                geologie: 3,
-                peisagistica: 3
+                drept: 5,
+                psihologie: 5,
+                comunicarePR: 4,
+                resurseUmane: 4,
+                stiintePolitice: 4,
+                relatiiInternationale: 3
             }
         },
         {
-            text: "Să văd animale sănătoase și bine îngrijite",
+            text: "Să coordonez o situație importantă și să îmi asum responsabilitatea pentru rezultat",
             scores: {
-                zootehnie: 5,
+                management: 5,
+                administrareaAfacerilor: 5,
+                administratiePublica: 4,
+                economie: 4,
+                studiiMilitare: 4,
+                ordinePublica: 4,
+                politie: 3
+            }
+        },
+        {
+            text: "Să rezolv o problemă practică și să construiesc, repar sau îmbunătățesc ceva",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                robotica: 5,
+                inginerieElectrica: 4,
+                autovehiculeRutiere: 5,
+                constructii: 4,
+                inginerieIndustriala: 4
+            }
+        },
+        {
+            text: "Să descopăr cum funcționează organismul, natura, animalele sau mediul",
+            scores: {
+                medicina: 5,
                 biologie: 5,
-                agricultura: 3,
-                nutritieDietetica: 2
-            }
-        },
-        {
-            text: "Să văd că o persoană sau o echipă își îmbunătățește performanțele",
-            scores: {
-                educatieFizicaSport: 5,
-                sportPerformanta: 5,
-                kinetoterapie: 4,
-                psihologie: 3,
-                pedagogie: 2
-            }
-        },
-        {
-            text: "Să creez un spațiu verde frumos și funcțional",
-            scores: {
-                peisagistica: 5,
-                horticultura: 5,
-                design: 4,
-                arhitectura: 3,
-                arhitecturaInterior: 2
-            }
-        }
-    ]
-},
-
-    {
-    question: "Ce tip de activitate practică te-ar atrage cel mai mult?",
-    answers: [
-        {
-            text: "Să lucrez cu plante și să învăț cum pot fi cultivate mai eficient",
-            scores: {
-                agricultura: 5,
-                horticultura: 5,
-                peisagistica: 4,
-                inginerieAlimentara: 3
-            }
-        },
-        {
-            text: "Să mă ocup de păduri, animale sălbatice și protejarea naturii",
-            scores: {
-                silvicultura: 5,
-                biologie: 5,
-                stiintaMediului: 5,
+                medicinaVeterinara: 5,
+                chimie: 4,
+                biochimie: 4,
+                stiintaMediului: 4,
                 geologie: 3
             }
-        },
-        {
-            text: "Să lucrez cu animale și să înțeleg nevoile lor",
-            scores: {
-                zootehnie: 5,
-                biologie: 5,
-                agricultura: 3,
-                stiintaMediului: 2
-            }
-        },
-        {
-            text: "Să antrenez, să pregătesc sau să ajut oameni să își îmbunătățească forma fizică",
-            scores: {
-                educatieFizicaSport: 5,
-                sportPerformanta: 5,
-                kinetoterapie: 5,
-                psihologie: 2
-            }
-        },
-        {
-            text: "Să lucrez pe teren și să studiez mediul, relieful și diferite zone",
-            scores: {
-                geologie: 5,
-                geografiaTurismului: 5,
-                stiintaMediului: 4,
-                silvicultura: 3
-            }
         }
     ]
 },
 
-    {
-    question: "Ce tip de activitate ți s-ar părea cel mai interesantă?",
+  {
+    question: "Ce fel de activitate ai prefera să îți ocupe cea mai mare parte din timpul de lucru?",
     answers: [
         {
-            text: "Să îmi folosesc corpul, să mă antrenez și să îmi depășesc limitele",
+            text: "Să analizez informații, să lucrez cu date și să găsesc soluții",
             scores: {
-                educatieFizicaSport: 5,
-                sportPerformanta: 5,
+                informatica: 5,
+                dataScience: 5,
+                matematica: 5,
+                statistica: 5,
+                inteligentaArtificiala: 4,
+                informaticaEconomica: 4
+            }
+        },
+        {
+            text: "Să comunic, să creez idei și să lucrez cu oameni",
+            scores: {
+                comunicarePR: 5,
+                jurnalism: 5,
+                marketing: 5,
+                publicitate: 4,
+                psihologie: 4,
+                resurseUmane: 4
+            }
+        },
+        {
+            text: "Să organizez, să planific și să coordonez activități",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                contabilitate: 3
+            }
+        },
+        {
+            text: "Să fac lucruri practice, să mă mișc și să văd rezultate concrete",
+            scores: {
+                inginerieMecanica: 5,
+                autovehiculeRutiere: 5,
+                mecatronica: 4,
+                constructii: 4,
+                sportPerformanta: 4,
+                educatieFizicaSport: 4,
                 kinetoterapie: 3
             }
         },
         {
-            text: "Să experimentez metode noi pentru plante și culturi",
+            text: "Să cercetez oamenii, sănătatea, animalele, natura sau mediul",
             scores: {
-                agricultura: 5,
-                horticultura: 5,
-                inginerieAlimentara: 4,
-                peisagistica: 3
-            }
-        },
-        {
-            text: "Să studiez animalele și modul în care pot fi îngrijite",
-            scores: {
-                zootehnie: 5,
+                medicina: 5,
                 biologie: 5,
+                medicinaVeterinara: 5,
+                psihologie: 4,
+                stiintaMediului: 4,
                 agricultura: 3,
-                stiintaMediului: 3
-            }
-        },
-        {
-            text: "Să cercetez natura, relieful și schimbările din mediul înconjurător",
-            scores: {
-                geologie: 5,
-                stiintaMediului: 5,
-                biologie: 4,
-                silvicultura: 4,
-                geografiaTurismului: 3
-            }
-        },
-        {
-            text: "Să planific și să amenajez spații verzi și zone naturale",
-            scores: {
-                peisagistica: 5,
-                horticultura: 5,
-                arhitectura: 3,
-                design: 3,
-                silvicultura: 3
+                geologie: 3
             }
         }
     ]
 },
 
-    {
-    question: "Cum ai prefera să vezi rezultatul muncii tale?",
+   {
+    question: "Dacă ai putea alege liber ce fel de impact să ai prin cariera ta, ce ai prefera?",
     answers: [
         {
-            text: "Să văd că o persoană sau o echipă a devenit mai bună datorită pregătirii mele",
+            text: "Să dezvolt tehnologii, invenții sau soluții care să facă lucrurile mai eficiente",
             scores: {
-                educatieFizicaSport: 5,
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                calculatoare: 5,
+                automatica: 4,
+                robotica: 4,
+                inginerieIndustriala: 4,
+                electronicaTelecomunicatii: 3
+            }
+        },
+        {
+            text: "Să îmbunătățesc viața oamenilor prin ajutor, educație, sănătate sau protejarea drepturilor lor",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                drept: 5,
+                pedagogie: 4,
+                asistentaMedicala: 4,
+                asistentaSociala: 4,
+                educatieTimpurie: 3
+            }
+        },
+        {
+            text: "Să construiesc proiecte de succes, să dezvolt afaceri sau să conduc echipe",
+            scores: {
+                management: 5,
+                economie: 5,
+                administrareaAfacerilor: 5,
+                afaceriInternationale: 4,
+                marketing: 4,
+                antreprenoriat: 4
+            }
+        },
+        {
+            text: "Să obțin performanță, să lucrez practic sau să contribui la siguranța și funcționarea societății",
+            scores: {
                 sportPerformanta: 5,
+                educatieFizicaSport: 5,
                 kinetoterapie: 4,
-                psihologie: 3,
-                pedagogie: 2
+                studiiMilitare: 4,
+                politie: 4,
+                ordinePublica: 4,
+                transporturi: 3
             }
         },
         {
-            text: "Să văd că am obținut rezultate bune într-o cultură sau într-o activitate agricolă",
+            text: "Să protejez natura, animalele și resursele planetei",
             scores: {
-                agricultura: 5,
-                horticultura: 5,
-                agronomie: 5,
-                inginerieAlimentara: 3,
-                peisagistica: 2
-            }
-        },
-        {
-            text: "Să văd că am contribuit la protejarea naturii și a mediului",
-            scores: {
-                silvicultura: 5,
-                stiintaMediului: 5,
-                biologie: 4,
-                geologie: 3,
-                ingineriaMediului: 3
-            }
-        },
-        {
-            text: "Să văd animale sănătoase și bine îngrijite",
-            scores: {
-                zootehnie: 5,
                 biologie: 5,
-                agricultura: 3,
-                stiintaMediului: 2
-            }
-        },
-        {
-            text: "Să văd că am creat un spațiu natural sau un peisaj apreciat de oameni",
-            scores: {
-                peisagistica: 5,
-                horticultura: 5,
-                design: 4,
-                arhitectura: 3,
-                arhitecturaInterior: 2
+                medicinaVeterinara: 5,
+                stiintaMediului: 5,
+                agricultura: 4,
+                silvicultura: 5,
+                geologie: 4,
+                horticultura: 3
             }
         }
     ]
@@ -2553,289 +2614,379 @@ const questions = [
 // Teologie, militar, ordine publică și transporturi
 
 {
-    question: "Ce tip de domeniu ți s-ar potrivi cel mai mult?",
+    question: "Ce fel de rol ți s-ar potrivi cel mai bine într-o echipă?",
     answers: [
         {
-            text: "Să studiez religia, credința și tradițiile spirituale",
+            text: "Persoana care analizează situația, găsește soluții și propune cea mai bună strategie",
             scores: {
-                teologie: 5,
-                filosofie: 3,
-                istorie: 2
+                informatica: 5,
+                matematica: 4,
+                inteligentaArtificiala: 4,
+                calculatoare: 4,
+                economie: 3,
+                strategie: 3
             }
         },
         {
-            text: "Să lucrez într-un domeniu militar și să contribui la apărarea țării",
+            text: "Persoana care îi motivează pe ceilalți și îi ajută să își atingă obiectivele",
             scores: {
+                psihologie: 5,
+                management: 4,
+                pedagogie: 4,
+                educatieFizicaSport: 4,
+                sportPerformanta: 4,
+                resurseUmane: 4
+            }
+        },
+        {
+            text: "Persoana care își asumă responsabilitatea și poate lua decizii în situații dificile",
+            scores: {
+                drept: 4,
+                administratiePublica: 4,
                 studiiMilitare: 5,
-                aparareSecuritate: 5,
-                ordinePublica: 3
-            }
-        },
-        {
-            text: "Să contribui la menținerea ordinii și siguranței publice",
-            scores: {
                 ordinePublica: 5,
-                politie: 5,
-                aparareSecuritate: 4
+                politie: 4,
+                aparareSecuritate: 5
             }
         },
         {
-            text: "Să lucrez în domeniul transporturilor și să coordonez activități de transport",
+            text: "Persoana care organizează activitățile și se asigură că totul funcționează corect",
             scores: {
-                transporturi: 5,
+                management: 5,
+                transporturi: 4,
+                administratiePublica: 4,
+                inginerieIndustriala: 4,
+                economie: 4,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Persoana care preferă acțiunea, mișcarea și obținerea unor rezultate concrete",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
+                kinetoterapie: 4,
+                inginerieMecanica: 4,
+                autovehiculeRutiere: 4,
                 aviatie: 3,
-                marina: 3,
-                inginerieIndustriala: 2
-            }
-        },
-        {
-            text: "Să lucrez în aviație sau în domeniul maritim",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 4,
-                aparareSecuritate: 2
+                marina: 3
             }
         }
     ]
 },
 
-    {
-    question: "În ce tip de activitate ți-ar plăcea cel mai mult să lucrezi?",
+   {
+    question: "Ce te-ar face să simți că ai ales cariera potrivită?",
     answers: [
         {
-            text: "Să ofer îndrumare spirituală și să lucrez cu oameni",
+            text: "Să pot învăța permanent lucruri noi și să îmi folosesc inteligența pentru a rezolva probleme",
             scores: {
-                teologie: 5,
-                psihologie: 2,
-                asistentaSociala: 2
+                informatica: 5,
+                matematica: 5,
+                calculatoare: 4,
+                inteligentaArtificiala: 4,
+                fizica: 3,
+                cercetare: 3
             }
         },
         {
-            text: "Să mă pregătesc fizic și mental pentru situații dificile",
+            text: "Să simt că munca mea are un efect direct asupra oamenilor",
             scores: {
+                medicina: 5,
+                psihologie: 5,
+                drept: 4,
+                asistentaMedicala: 4,
+                pedagogie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Să am libertatea de a crea, comunica și veni cu idei proprii",
+            scores: {
+                marketing: 5,
+                publicitate: 5,
+                comunicarePR: 5,
+                jurnalism: 4,
+                design: 4,
+                arhitectura: 3
+            }
+        },
+        {
+            text: "Să am obiective clare, disciplină și să pot demonstra prin rezultate cât de bun sunt",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
                 studiiMilitare: 5,
-                aparareSecuritate: 5,
+                ordinePublica: 4,
+                politie: 4,
+                aparareSecuritate: 4
+            }
+        },
+        {
+            text: "Să construiesc, să organizez sau să coordonez lucruri care produc rezultate concrete",
+            scores: {
+                management: 5,
+                inginerieMecanica: 5,
+                inginerieIndustriala: 4,
+                administrareaAfacerilor: 4,
+                transporturi: 4,
+                autovehiculeRutiere: 4,
+                economie: 3
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce fel de provocare te-ar motiva cel mai mult?",
+    answers: [
+        {
+            text: "Să depășesc o problemă dificilă prin logică, strategie și perseverență",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                inteligentaArtificiala: 4,
+                calculatoare: 4,
+                drept: 3,
+                strategie: 3
+            }
+        },
+        {
+            text: "Să îmi depășesc limitele și să obțin performanțe din ce în ce mai bune",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
+                kinetoterapie: 4,
+                psihologie: 3,
+                management: 3
+            }
+        },
+        {
+            text: "Să gestionez o situație dificilă în care trebuie să rămân calm și să iau decizii rapide",
+            scores: {
+                medicina: 5,
+                politie: 5,
+                ordinePublica: 5,
+                studiiMilitare: 5,
+                aparareSecuritate: 4,
+                asistentaMedicala: 4
+            }
+        },
+        {
+            text: "Să construiesc sau să îmbunătățesc ceva astfel încât să funcționeze mai bine",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                robotica: 4,
+                inginerieElectrica: 4,
+                autovehiculeRutiere: 5,
+                inginerieIndustriala: 4
+            }
+        },
+        {
+            text: "Să coordonez oameni și resurse pentru a transforma o idee într-un rezultat concret",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                afaceriInternationale: 4,
+                transporturi: 4,
+                marketing: 3
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce fel de program de lucru ți s-ar potrivi cel mai bine?",
+    answers: [
+        {
+            text: "Un program în care să pot lucra concentrat, să analizez și să rezolv probleme",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                calculatoare: 4,
+                dataScience: 4,
+                informaticaEconomica: 4,
+                contabilitate: 3
+            }
+        },
+        {
+            text: "Un program dinamic, în care să fiu mereu activ și să nu fac același lucru în fiecare zi",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
+                kinetoterapie: 4,
+                politie: 4,
+                ordinePublica: 4,
+                aviatie: 3,
+                marina: 3
+            }
+        },
+        {
+            text: "Un program în care să interacționez mult cu oamenii și să îi pot ajuta",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                drept: 4,
+                asistentaMedicala: 4,
+                pedagogie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Un program în care să organizez, coordonez și să iau decizii",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                resurseUmane: 3
+            }
+        },
+        {
+            text: "Un program în care să lucrez practic, cu echipamente, mașini, sisteme sau proiecte concrete",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                autovehiculeRutiere: 5,
+                robotica: 4,
+                inginerieElectrica: 4,
+                transporturi: 4,
+                aviatie: 3,
+                marina: 3
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce calitate ai vrea să fie cea mai importantă în viitoarea ta profesie?",
+    answers: [
+        {
+            text: "Inteligența și capacitatea de a înțelege lucruri complexe",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                calculatoare: 4,
+                fizica: 4,
+                inteligentaArtificiala: 5,
+                dataScience: 4
+            }
+        },
+        {
+            text: "Empatia și capacitatea de a înțelege și ajuta oamenii",
+            scores: {
+                psihologie: 5,
+                medicina: 5,
+                asistentaMedicala: 5,
+                pedagogie: 4,
+                drept: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Creativitatea și capacitatea de a veni mereu cu idei noi",
+            scores: {
+                design: 5,
+                arhitectura: 5,
+                marketing: 5,
+                publicitate: 5,
+                comunicarePR: 4,
+                jurnalism: 4
+            }
+        },
+        {
+            text: "Disciplina, rezistența și dorința de a-mi depăși limitele",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
+                studiiMilitare: 5,
+                ordinePublica: 4,
+                politie: 4,
+                aparareSecuritate: 4,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Organizarea și capacitatea de a transforma ideile în rezultate",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                inginerieIndustriala: 4,
+                transporturi: 4,
+                afaceriInternationale: 4
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce te-ar face să fii cel mai mândru de cariera ta?",
+    answers: [
+        {
+            text: "Să creez ceva inovator care să rezolve probleme și să fie util pentru mulți oameni",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                inteligentaArtificiala: 5,
+                automatica: 4,
+                robotica: 4,
+                inginerieIndustriala: 4,
+                electronicaTelecomunicatii: 3
+            }
+        },
+        {
+            text: "Să știu că prin munca mea am ajutat oameni și le-am făcut viața mai bună",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                drept: 4,
+                pedagogie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Să îmi depășesc constant limitele și să ajung foarte bun într-un domeniu competitiv",
+            scores: {
+                sportPerformanta: 5,
+                educatieFizicaSport: 5,
+                kinetoterapie: 4,
+                studiiMilitare: 4,
                 politie: 3,
-                sportPerformanta: 2
-            }
-        },
-        {
-            text: "Să investighez situații și să contribui la siguranța oamenilor",
-            scores: {
-                politie: 5,
-                ordinePublica: 5,
-                aparareSecuritate: 4
-            }
-        },
-        {
-            text: "Să organizez și să coordonez transportul de persoane sau mărfuri",
-            scores: {
-                transporturi: 5,
-                inginerieIndustriala: 3,
-                management: 2
-            }
-        },
-        {
-            text: "Să lucrez cu aeronave, nave sau în infrastructura de transport",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 5,
-                inginerieMecanica: 2
-            }
-        }
-    ]
-},
-
-    {
-    question: "Ce fel de responsabilitate ai prefera să ai la locul de muncă?",
-    answers: [
-        {
-            text: "Să îi sprijin pe oameni din punct de vedere spiritual și moral",
-            scores: {
-                teologie: 5,
-                filosofie: 3,
-                asistentaSociala: 2
-            }
-        },
-        {
-            text: "Să apăr țara și să îndeplinesc misiuni importante pentru siguranța națională",
-            scores: {
-                studiiMilitare: 5,
-                aparareSecuritate: 5,
                 ordinePublica: 3
             }
         },
         {
-            text: "Să asigur respectarea legii și siguranța comunității",
+            text: "Să construiesc ceva important, să conduc proiecte și să văd rezultate concrete",
             scores: {
-                politie: 5,
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                inginerieMecanica: 4,
+                constructii: 4,
+                autovehiculeRutiere: 4,
+                transporturi: 3
+            }
+        },
+        {
+            text: "Să contribui la protejarea societății, a oamenilor sau a mediului",
+            scores: {
+                aparareSecuritate: 5,
                 ordinePublica: 5,
-                aparareSecuritate: 3
-            }
-        },
-        {
-            text: "Să coordonez activități și procese din domeniul transporturilor",
-            scores: {
-                transporturi: 5,
-                management: 3,
-                inginerieIndustriala: 2
-            }
-        },
-        {
-            text: "Să mă ocup de activități complexe din aviație sau domeniul maritim",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 4,
-                inginerieMecanica: 2
+                politie: 5,
+                studiiMilitare: 4,
+                stiintaMediului: 5,
+                biologie: 4,
+                silvicultura: 4,
+                agricultura: 3
             }
         }
     ]
 },
-
-    {
-    question: "Ce situație te-ar motiva cel mai mult să îți faci meseria cât mai bine?",
-    answers: [
-        {
-            text: "Să pot ajuta oamenii să își găsească echilibrul și să își dezvolte viața spirituală",
-            scores: {
-                teologie: 5,
-                psihologie: 2,
-                filosofie: 2
-            }
-        },
-        {
-            text: "Să știu că munca mea contribuie la apărarea și securitatea țării",
-            scores: {
-                studiiMilitare: 5,
-                aparareSecuritate: 5,
-                ordinePublica: 3
-            }
-        },
-        {
-            text: "Să știu că prin munca mea oamenii sunt mai în siguranță",
-            scores: {
-                politie: 5,
-                ordinePublica: 5,
-                aparareSecuritate: 4
-            }
-        },
-        {
-            text: "Să mă asigur că transporturile se desfășoară eficient și în siguranță",
-            scores: {
-                transporturi: 5,
-                management: 3,
-                inginerieIndustriala: 2
-            }
-        },
-        {
-            text: "Să particip la activități importante din aviație sau domeniul maritim",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 4,
-                inginerieMecanica: 2
-            }
-        }
-    ]
-},
-
-    {
-    question: "Ce tip de pregătire ți s-ar părea cel mai interesant?",
-    answers: [
-        {
-            text: "Să studiez teologia, istoria religiilor și tradițiile spirituale",
-            scores: {
-                teologie: 5,
-                istorie: 3,
-                filosofie: 3
-            }
-        },
-        {
-            text: "Să învăț tactici, strategie, disciplină și metode de apărare",
-            scores: {
-                studiiMilitare: 5,
-                aparareSecuritate: 5,
-                ordinePublica: 3
-            }
-        },
-        {
-            text: "Să învăț legislație, proceduri și metode de intervenție",
-            scores: {
-                politie: 5,
-                ordinePublica: 5,
-                aparareSecuritate: 3,
-                drept: 2
-            }
-        },
-        {
-            text: "Să învăț despre organizarea și funcționarea sistemelor de transport",
-            scores: {
-                transporturi: 5,
-                management: 3,
-                inginerieIndustriala: 3
-            }
-        },
-        {
-            text: "Să învăț despre aeronave, navigație sau activități maritime",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 4,
-                inginerieMecanica: 2
-            }
-        }
-    ]
-},
-
-    {
-    question: "Cum ai prefera să vezi rezultatul muncii tale?",
-    answers: [
-        {
-            text: "Să știu că am avut un impact pozitiv asupra vieții spirituale a oamenilor",
-            scores: {
-                teologie: 5,
-                psihologie: 2,
-                asistentaSociala: 2
-            }
-        },
-        {
-            text: "Să știu că am contribuit la apărarea și securitatea țării",
-            scores: {
-                studiiMilitare: 5,
-                aparareSecuritate: 5,
-                ordinePublica: 3
-            }
-        },
-        {
-            text: "Să știu că am contribuit la siguranța și protejarea oamenilor",
-            scores: {
-                politie: 5,
-                ordinePublica: 5,
-                aparareSecuritate: 4
-            }
-        },
-        {
-            text: "Să văd că transporturile funcționează eficient și fără probleme",
-            scores: {
-                transporturi: 5,
-                management: 3,
-                inginerieIndustriala: 2
-            }
-        },
-        {
-            text: "Să văd că o aeronavă sau o navă funcționează și își desfășoară misiunea cu succes",
-            scores: {
-                aviatie: 5,
-                marina: 5,
-                transporturi: 4,
-                inginerieMecanica: 2
-            }
-        }
-    ]
-}
     ];
 
 let currentQuestion = 0;
