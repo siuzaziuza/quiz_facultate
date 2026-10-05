@@ -2835,7 +2835,8 @@ const questions = [
             }
         }
     ]
-},
+}
+    ];
 
 let currentQuestion = 0;
 const scores = {
