@@ -2226,6 +2226,329 @@ const questions = [
     ]
 },
 
+    // CAPITOLUL 7
+// Sport, agricultură și științele naturii
+
+    {
+    question: "Ce tip de activitate ți-ar plăcea cel mai mult să faci în mod constant?",
+    answers: [
+        {
+            text: "Să mă antrenez și să îmi depășesc limitele fizice",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Să lucrez cu plante, culturi și terenuri agricole",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                agronomie: 5,
+                inginerieMediului: 3,
+                peisagistica: 3
+            }
+        },
+        {
+            text: "Să lucrez cu animale și să mă ocup de creșterea lor",
+            scores: {
+                zootehnie: 5,
+                biologie: 4,
+                medicinaVeterinara: 5,
+                agricultura: 3
+            }
+        },
+        {
+            text: "Să explorez natura, mediul și diferite locuri",
+            scores: {
+                geografie: 5,
+                geografiaTurismului: 5,
+                silvicultura: 4,
+                stiintaMediului: 4,
+                geologie: 3
+            }
+        },
+        {
+            text: "Să proiectez și să amenajez spații verzi sau peisaje",
+            scores: {
+                peisagistica: 5,
+                arhitectura: 4,
+                arhitecturaInterior: 4,
+                design: 4,
+                horticultura: 3
+            }
+        }
+    ]
+},
+
+    {
+    question: "În ce tip de mediu ți-ar plăcea cel mai mult să îți desfășori activitatea?",
+    answers: [
+        {
+            text: "Pe teren, în aer liber și în mijlocul naturii",
+            scores: {
+                silvicultura: 5,
+                stiintaMediului: 5,
+                geologia: 4,
+                agricultura: 4,
+                geografiaTurismului: 3
+            }
+        },
+        {
+            text: "În ferme, sere sau pe terenuri agricole",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                zootehnie: 4,
+                peisagistica: 3,
+                inginerieAlimentara: 3
+            }
+        },
+        {
+            text: "Într-un mediu în care lucrez cu animale",
+            scores: {
+                zootehnie: 5,
+                biologie: 5,
+                agricultura: 3,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Într-un mediu activ, unde mă pot mișca și lucra cu oamenii",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 4,
+                turism: 3,
+                geografiaTurismului: 3
+            }
+        },
+        {
+            text: "Într-un spațiu în care pot proiecta și amenaja locuri",
+            scores: {
+                peisagistica: 5,
+                arhitectura: 4,
+                design: 4,
+                arhitecturaInterior: 4,
+                horticultura: 3
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce rezultat ți-ar aduce cea mai mare satisfacție?",
+    answers: [
+        {
+            text: "Să văd că am obținut o recoltă bună și am îmbunătățit o cultură",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                inginerieAlimentara: 3,
+                peisagistica: 3
+            }
+        },
+        {
+            text: "Să contribui la protejarea pădurilor și a naturii",
+            scores: {
+                silvicultura: 5,
+                stiintaMediului: 5,
+                biologie: 4,
+                geologie: 3,
+                peisagistica: 3
+            }
+        },
+        {
+            text: "Să văd animale sănătoase și bine îngrijite",
+            scores: {
+                zootehnie: 5,
+                biologie: 5,
+                agricultura: 3,
+                nutritieDietetica: 2
+            }
+        },
+        {
+            text: "Să văd că o persoană sau o echipă își îmbunătățește performanțele",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 4,
+                psihologie: 3,
+                pedagogie: 2
+            }
+        },
+        {
+            text: "Să creez un spațiu verde frumos și funcțional",
+            scores: {
+                peisagistica: 5,
+                horticultura: 5,
+                design: 4,
+                arhitectura: 3,
+                arhitecturaInterior: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce tip de activitate practică te-ar atrage cel mai mult?",
+    answers: [
+        {
+            text: "Să lucrez cu plante și să învăț cum pot fi cultivate mai eficient",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                peisagistica: 4,
+                inginerieAlimentara: 3
+            }
+        },
+        {
+            text: "Să mă ocup de păduri, animale sălbatice și protejarea naturii",
+            scores: {
+                silvicultura: 5,
+                biologie: 5,
+                stiintaMediului: 5,
+                geologie: 3
+            }
+        },
+        {
+            text: "Să lucrez cu animale și să înțeleg nevoile lor",
+            scores: {
+                zootehnie: 5,
+                biologie: 5,
+                agricultura: 3,
+                stiintaMediului: 2
+            }
+        },
+        {
+            text: "Să antrenez, să pregătesc sau să ajut oameni să își îmbunătățească forma fizică",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 5,
+                psihologie: 2
+            }
+        },
+        {
+            text: "Să lucrez pe teren și să studiez mediul, relieful și diferite zone",
+            scores: {
+                geologie: 5,
+                geografiaTurismului: 5,
+                stiintaMediului: 4,
+                silvicultura: 3
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce tip de activitate ți s-ar părea cel mai interesantă?",
+    answers: [
+        {
+            text: "Să îmi folosesc corpul, să mă antrenez și să îmi depășesc limitele",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Să experimentez metode noi pentru plante și culturi",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                inginerieAlimentara: 4,
+                peisagistica: 3
+            }
+        },
+        {
+            text: "Să studiez animalele și modul în care pot fi îngrijite",
+            scores: {
+                zootehnie: 5,
+                biologie: 5,
+                agricultura: 3,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Să cercetez natura, relieful și schimbările din mediul înconjurător",
+            scores: {
+                geologie: 5,
+                stiintaMediului: 5,
+                biologie: 4,
+                silvicultura: 4,
+                geografiaTurismului: 3
+            }
+        },
+        {
+            text: "Să planific și să amenajez spații verzi și zone naturale",
+            scores: {
+                peisagistica: 5,
+                horticultura: 5,
+                arhitectura: 3,
+                design: 3,
+                silvicultura: 3
+            }
+        }
+    ]
+},
+
+    {
+    question: "Cum ai prefera să vezi rezultatul muncii tale?",
+    answers: [
+        {
+            text: "Să văd că o persoană sau o echipă a devenit mai bună datorită pregătirii mele",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 4,
+                psihologie: 3,
+                pedagogie: 2
+            }
+        },
+        {
+            text: "Să văd că am obținut rezultate bune într-o cultură sau într-o activitate agricolă",
+            scores: {
+                agricultura: 5,
+                horticultura: 5,
+                agronomie: 5,
+                inginerieAlimentara: 3,
+                peisagistica: 2
+            }
+        },
+        {
+            text: "Să văd că am contribuit la protejarea naturii și a mediului",
+            scores: {
+                silvicultura: 5,
+                stiintaMediului: 5,
+                biologie: 4,
+                geologie: 3,
+                ingineriaMediului: 3
+            }
+        },
+        {
+            text: "Să văd animale sănătoase și bine îngrijite",
+            scores: {
+                zootehnie: 5,
+                biologie: 5,
+                agricultura: 3,
+                stiintaMediului: 2
+            }
+        },
+        {
+            text: "Să văd că am creat un spațiu natural sau un peisaj apreciat de oameni",
+            scores: {
+                peisagistica: 5,
+                horticultura: 5,
+                design: 4,
+                arhitectura: 3,
+                arhitecturaInterior: 2
+            }
+        }
+    ]
+},
+
 let currentQuestion = 0;
 const scores = {
     // INFORMATICĂ ȘI TEHNOLOGIE
