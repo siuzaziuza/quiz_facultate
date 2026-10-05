@@ -755,71 +755,370 @@ const questions = [
     // CAPITOLUL 3
     // Aptitudini și mod de gândire
 
-    {
-        question: "Care dintre aceste abilități te descrie cel mai bine?",
-        answers: [
-            "Gândesc logic și analitic",
-            "Înțeleg ușor emoțiile oamenilor",
-            "Comunic și argumentez bine",
-            "Sunt creativ și am multe idei",
-            "Sunt practic și găsesc soluții concrete"
-        ]
-    },
+   {
+    question: "Care dintre aceste abilități te descrie cel mai bine?",
+    answers: [
+        {
+            text: "Gândesc logic și analitic",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 4,
+                dataScience: 4,
+                statistica: 3,
+                automatica: 3
+            }
+        },
+        {
+            text: "Înțeleg ușor emoțiile oamenilor",
+            scores: {
+                psihologie: 5,
+                asistentaSociala: 4,
+                resurseUmane: 4,
+                sociologie: 4,
+                pedagogie: 3,
+                medicina: 2
+            }
+        },
+        {
+            text: "Comunic și argumentez bine",
+            scores: {
+                drept: 5,
+                comunicarePR: 5,
+                jurnalism: 4,
+                stiintePolitice: 4,
+                relatiiInternationale: 3,
+                publicitate: 3
+            }
+        },
+        {
+            text: "Sunt creativ și am multe idei",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                arhitecturaInterior: 3
+            }
+        },
+        {
+            text: "Sunt practic și găsesc soluții concrete",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                robotica: 4,
+                autovehiculeRutiere: 4,
+                inginerieElectrica: 4,
+                constructii: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Când întâlnești o problemă dificilă, ce faci prima dată?",
-        answers: [
-            "O împart în pași mici și logici",
-            "Caut informații și dovezi",
-            "Cer opiniile altor persoane",
-            "Încerc o abordare originală",
-            "Testez direct mai multe soluții"
-        ]
-    },
+   {
+    question: "Când întâlnești o problemă dificilă, ce faci prima dată?",
+    answers: [
+        {
+            text: "O împart în pași mici și logici",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 4,
+                dataScience: 4,
+                automatica: 3,
+                inginerieMecanica: 3
+            }
+        },
+        {
+            text: "Caut informații și dovezi",
+            scores: {
+                cercetare: 5,
+                biologie: 4,
+                biochimie: 4,
+                medicina: 3,
+                chimie: 3,
+                fizica: 3
+            }
+        },
+        {
+            text: "Cer opiniile altor persoane",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                resurseUmane: 4,
+                asistentaSociala: 3,
+                management: 3,
+                comunicarePR: 3
+            }
+        },
+        {
+            text: "Încerc o abordare originală",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                arhitecturaInterior: 3
+            }
+        },
+        {
+            text: "Testez direct mai multe soluții",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                robotica: 4,
+                autovehiculeRutiere: 4,
+                inginerieElectrica: 4,
+                inginerieIndustriala: 3
+            }
+        }
+    ]
+}, 
 
-    {
-        question: "Ce observi cel mai repede într-o situație nouă?",
-        answers: [
-            "Tiparele și regulile",
-            "Detaliile importante",
-            "Starea și reacțiile oamenilor",
-            "Oportunitățile și avantajele",
-            "Aspectul vizual și atmosfera"
-        ]
-    },
+   {
+    question: "Ce observi cel mai repede într-o situație nouă?",
+    answers: [
+        {
+            text: "Tiparele și regulile",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 4,
+                statistica: 4,
+                dataScience: 3,
+                automatica: 3
+            }
+        },
+        {
+            text: "Detaliile importante",
+            scores: {
+                medicina: 5,
+                biologie: 4,
+                biochimie: 4,
+                farmacie: 4,
+                chimie: 3,
+                inginerieMedicala: 3
+            }
+        },
+        {
+            text: "Starea și reacțiile oamenilor",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                asistentaSociala: 4,
+                resurseUmane: 4,
+                pedagogie: 3,
+                comunicarePR: 3
+            }
+        },
+        {
+            text: "Oportunitățile și avantajele",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 4,
+                marketing: 4,
+                antreprenoriat: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Aspectul vizual și atmosfera",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                arhitecturaInterior: 4,
+                fotografieVideo: 4,
+                cinematografie: 4,
+                arhitectura: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce tip de sarcină ți se pare cea mai ușoară?",
-        answers: [
-            "Să lucrez cu numere și formule",
-            "Să memorez și să înțeleg informații complexe",
-            "Să explic ceva unei persoane",
-            "Să organizez un grup",
-            "Să creez ceva de la zero"
-        ]
-    },
+   {
+    question: "Ce tip de sarcină ți se pare cea mai ușoară?",
+    answers: [
+        {
+            text: "Să lucrez cu numere și formule",
+            scores: {
+                matematica: 5,
+                matematicaInformatica: 5,
+                statistica: 4,
+                informatica: 3,
+                dataScience: 3,
+                fizica: 3
+            }
+        },
+        {
+            text: "Să memorez și să înțeleg informații complexe",
+            scores: {
+                medicina: 5,
+                biologie: 5,
+                biochimie: 4,
+                farmacie: 4,
+                biotehnologii: 3,
+                chimie: 3
+            }
+        },
+        {
+            text: "Să explic ceva unei persoane",
+            scores: {
+                pedagogie: 5,
+                psihologie: 4,
+                comunicarePR: 4,
+                jurnalism: 4,
+                litere: 3,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Să organizez un grup",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                resurseUmane: 4,
+                administratiePublica: 4,
+                marketing: 3,
+                turism: 3
+            }
+        },
+        {
+            text: "Să creez ceva de la zero",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                arhitectura: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                publicitate: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Cum iei de obicei o decizie importantă?",
-        answers: [
-            "Analizez logic avantajele și dezavantajele",
-            "Caut cât mai multe informații",
-            "Mă gândesc la efectele asupra oamenilor",
-            "Mă bazez pe experiență și rezultate",
-            "Îmi urmez intuiția și ideile"
-        ]
-    },
+  {
+    question: "Cum iei de obicei o decizie importantă?",
+    answers: [
+        {
+            text: "Analizez logic avantajele și dezavantajele",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 4,
+                economie: 3,
+                dataScience: 3,
+                statistica: 3
+            }
+        },
+        {
+            text: "Caut cât mai multe informații",
+            scores: {
+                cercetare: 5,
+                biologie: 4,
+                medicina: 4,
+                biochimie: 4,
+                fizica: 3,
+                chimie: 3
+            }
+        },
+        {
+            text: "Mă gândesc la efectele asupra oamenilor",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                asistentaSociala: 4,
+                drept: 3,
+                resurseUmane: 3,
+                pedagogie: 3
+            }
+        },
+        {
+            text: "Mă bazez pe experiență și rezultate",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 4,
+                inginerieMecanica: 4,
+                autovehiculeRutiere: 4,
+                economie: 3,
+                marketing: 3
+            }
+        },
+        {
+            text: "Îmi urmez intuiția și ideile",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                comunicarePR: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Pentru ce te caută cel mai des ceilalți?",
-        answers: [
-            "Pentru a rezolva o problemă tehnică",
-            "Pentru un sfat personal",
-            "Pentru a explica sau prezenta ceva",
-            "Pentru a organiza și coordona",
-            "Pentru idei originale și creative"
-        ]
-    },
+  {
+    question: "Ce te motivează cel mai mult să înveți ceva nou?",
+    answers: [
+        {
+            text: "Curiozitatea și dorința de a înțelege cum funcționează lucrurile",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                fizica: 4,
+                inginerieMecanica: 3,
+                matematicaInformatica: 4,
+                dataScience: 3
+            }
+        },
+        {
+            text: "Dorința de a ajuta sau de a înțelege oamenii",
+            scores: {
+                medicina: 4,
+                psihologie: 5,
+                pedagogie: 4,
+                asistentaSociala: 4,
+                medicinaDentara: 3,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Posibilitatea de a obține rezultate și de a avea succes",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 4,
+                marketing: 4,
+                finanteBanci: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Dorința de a-mi exprima ideile și creativitatea",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                litere: 3
+            }
+        },
+        {
+            text: "Dorința de a-mi depăși limitele și de a deveni mai bun(ă)",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 3,
+                management: 2,
+                psihologie: 2
+            }
+        }
+    ]
+},
 
 
     // CAPITOLUL 4
