@@ -2549,6 +2549,294 @@ const questions = [
     ]
 },
 
+    // CAPITOLUL 8
+// Teologie, militar, ordine publică și transporturi
+
+{
+    question: "Ce tip de domeniu ți s-ar potrivi cel mai mult?",
+    answers: [
+        {
+            text: "Să studiez religia, credința și tradițiile spirituale",
+            scores: {
+                teologie: 5,
+                filosofie: 3,
+                istorie: 2
+            }
+        },
+        {
+            text: "Să lucrez într-un domeniu militar și să contribui la apărarea țării",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                ordinePublica: 3
+            }
+        },
+        {
+            text: "Să contribui la menținerea ordinii și siguranței publice",
+            scores: {
+                ordinePublica: 5,
+                politie: 5,
+                aparareSecuritate: 4
+            }
+        },
+        {
+            text: "Să lucrez în domeniul transporturilor și să coordonez activități de transport",
+            scores: {
+                transporturi: 5,
+                aviatie: 3,
+                marina: 3,
+                inginerieIndustriala: 2
+            }
+        },
+        {
+            text: "Să lucrez în aviație sau în domeniul maritim",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 4,
+                aparareSecuritate: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "În ce tip de activitate ți-ar plăcea cel mai mult să lucrezi?",
+    answers: [
+        {
+            text: "Să ofer îndrumare spirituală și să lucrez cu oameni",
+            scores: {
+                teologie: 5,
+                psihologie: 2,
+                asistentaSociala: 2
+            }
+        },
+        {
+            text: "Să mă pregătesc fizic și mental pentru situații dificile",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                politie: 3,
+                sportPerformanta: 2
+            }
+        },
+        {
+            text: "Să investighez situații și să contribui la siguranța oamenilor",
+            scores: {
+                politie: 5,
+                ordinePublica: 5,
+                aparareSecuritate: 4
+            }
+        },
+        {
+            text: "Să organizez și să coordonez transportul de persoane sau mărfuri",
+            scores: {
+                transporturi: 5,
+                inginerieIndustriala: 3,
+                management: 2
+            }
+        },
+        {
+            text: "Să lucrez cu aeronave, nave sau în infrastructura de transport",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 5,
+                inginerieMecanica: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce fel de responsabilitate ai prefera să ai la locul de muncă?",
+    answers: [
+        {
+            text: "Să îi sprijin pe oameni din punct de vedere spiritual și moral",
+            scores: {
+                teologie: 5,
+                filosofie: 3,
+                asistentaSociala: 2
+            }
+        },
+        {
+            text: "Să apăr țara și să îndeplinesc misiuni importante pentru siguranța națională",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                ordinePublica: 3
+            }
+        },
+        {
+            text: "Să asigur respectarea legii și siguranța comunității",
+            scores: {
+                politie: 5,
+                ordinePublica: 5,
+                aparareSecuritate: 3
+            }
+        },
+        {
+            text: "Să coordonez activități și procese din domeniul transporturilor",
+            scores: {
+                transporturi: 5,
+                management: 3,
+                inginerieIndustriala: 2
+            }
+        },
+        {
+            text: "Să mă ocup de activități complexe din aviație sau domeniul maritim",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 4,
+                inginerieMecanica: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce situație te-ar motiva cel mai mult să îți faci meseria cât mai bine?",
+    answers: [
+        {
+            text: "Să pot ajuta oamenii să își găsească echilibrul și să își dezvolte viața spirituală",
+            scores: {
+                teologie: 5,
+                psihologie: 2,
+                filosofie: 2
+            }
+        },
+        {
+            text: "Să știu că munca mea contribuie la apărarea și securitatea țării",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                ordinePublica: 3
+            }
+        },
+        {
+            text: "Să știu că prin munca mea oamenii sunt mai în siguranță",
+            scores: {
+                politie: 5,
+                ordinePublica: 5,
+                aparareSecuritate: 4
+            }
+        },
+        {
+            text: "Să mă asigur că transporturile se desfășoară eficient și în siguranță",
+            scores: {
+                transporturi: 5,
+                management: 3,
+                inginerieIndustriala: 2
+            }
+        },
+        {
+            text: "Să particip la activități importante din aviație sau domeniul maritim",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 4,
+                inginerieMecanica: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "Ce tip de pregătire ți s-ar părea cel mai interesant?",
+    answers: [
+        {
+            text: "Să studiez teologia, istoria religiilor și tradițiile spirituale",
+            scores: {
+                teologie: 5,
+                istorie: 3,
+                filosofie: 3
+            }
+        },
+        {
+            text: "Să învăț tactici, strategie, disciplină și metode de apărare",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                ordinePublica: 3
+            }
+        },
+        {
+            text: "Să învăț legislație, proceduri și metode de intervenție",
+            scores: {
+                politie: 5,
+                ordinePublica: 5,
+                aparareSecuritate: 3,
+                drept: 2
+            }
+        },
+        {
+            text: "Să învăț despre organizarea și funcționarea sistemelor de transport",
+            scores: {
+                transporturi: 5,
+                management: 3,
+                inginerieIndustriala: 3
+            }
+        },
+        {
+            text: "Să învăț despre aeronave, navigație sau activități maritime",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 4,
+                inginerieMecanica: 2
+            }
+        }
+    ]
+},
+
+    {
+    question: "Cum ai prefera să vezi rezultatul muncii tale?",
+    answers: [
+        {
+            text: "Să știu că am avut un impact pozitiv asupra vieții spirituale a oamenilor",
+            scores: {
+                teologie: 5,
+                psihologie: 2,
+                asistentaSociala: 2
+            }
+        },
+        {
+            text: "Să știu că am contribuit la apărarea și securitatea țării",
+            scores: {
+                studiiMilitare: 5,
+                aparareSecuritate: 5,
+                ordinePublica: 3
+            }
+        },
+        {
+            text: "Să știu că am contribuit la siguranța și protejarea oamenilor",
+            scores: {
+                politie: 5,
+                ordinePublica: 5,
+                aparareSecuritate: 4
+            }
+        },
+        {
+            text: "Să văd că transporturile funcționează eficient și fără probleme",
+            scores: {
+                transporturi: 5,
+                management: 3,
+                inginerieIndustriala: 2
+            }
+        },
+        {
+            text: "Să văd că o aeronavă sau o navă funcționează și își desfășoară misiunea cu succes",
+            scores: {
+                aviatie: 5,
+                marina: 5,
+                transporturi: 4,
+                inginerieMecanica: 2
+            }
+        }
+    ]
+},
+
 let currentQuestion = 0;
 const scores = {
     // INFORMATICĂ ȘI TEHNOLOGIE
@@ -2664,7 +2952,18 @@ geografie: 0,
     educatieFizicaSport: 0,
     sportPerformanta: 0,
     geografiaTurismului: 0,
-    turism: 0
+    turism: 0,
+
+    // TEOLOGIE, MILITAR, ORDINE PUBLICĂ ȘI TRANSPORTURI
+teologie: 0,
+studiiMilitare: 0,
+aparareSecuritate: 0,
+ordinePublica: 0,
+politie: 0,
+transporturi: 0,
+aviatie: 0,
+marina: 0
+
 };
 
 function startQuiz() {
