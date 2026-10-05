@@ -385,71 +385,372 @@ const questions = [
     // Activități și interese practice
 
     {
-        question: "Ce activitate ți-ar face cea mai mare plăcere?",
-        answers: [
-            "Să rezolv o problemă logică dificilă",
-            "Să ajut direct o persoană care are nevoie",
-            "Să organizez un proiect sau un eveniment",
-            "Să creez ceva original",
-            "Să construiesc sau să repar ceva"
-        ]
-    },
+    question: "Ce activitate ți-ar face cea mai mare plăcere?",
+    answers: [
+        {
+            text: "Să rezolv o problemă logică dificilă",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                matematicaInformatica: 4,
+                dataScience: 3,
+                automatica: 3,
+                inginerieMecanica: 2
+            }
+        },
+        {
+            text: "Să ajut direct o persoană care are nevoie",
+            scores: {
+                medicina: 5,
+                asistentaMedicala: 5,
+                psihologie: 4,
+                asistentaSociala: 4,
+                kinetoterapie: 4,
+                pedagogie: 3
+            }
+        },
+        {
+            text: "Să organizez un proiect sau un eveniment",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 4,
+                marketing: 4,
+                comunicarePR: 3,
+                turism: 3,
+                administratiePublica: 2
+            }
+        },
+        {
+            text: "Să creez ceva original",
+            scores: {
+                design: 5,
+                artePlastice: 4,
+                publicitate: 4,
+                cinematografie: 3,
+                fotografieVideo: 3,
+                arhitecturaInterior: 3
+            }
+        },
+        {
+            text: "Să construiesc sau să repar ceva",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 4,
+                autovehiculeRutiere: 4,
+                inginerieElectrica: 4,
+                robotica: 3,
+                instalatiiConstructii: 2
+            }
+        }
+    ]
+},
 
     {
-        question: "Dacă ai participa la un concurs, ce tip ai prefera?",
-        answers: [
-            "Programare sau matematică",
-            "Științe sau cercetare",
-            "Dezbateri și argumentare",
-            "Antreprenoriat și business",
-            "Artă, design sau creație"
-        ]
-    },
+    question: "Dacă ai participa la un concurs, ce tip ai prefera?",
+    answers: [
+        {
+            text: "Programare sau matematică",
+            scores: {
+                informatica: 5,
+                matematicaInformatica: 5,
+                matematica: 4,
+                calculatoare: 4,
+                dataScience: 3,
+                statistica: 3
+            }
+        },
+        {
+            text: "Științe sau cercetare",
+            scores: {
+                biologie: 4,
+                biochimie: 4,
+                biotehnologii: 4,
+                fizica: 4,
+                chimie: 4,
+                geologie: 3,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Dezbateri și argumentare",
+            scores: {
+                drept: 5,
+                stiintePolitice: 4,
+                relatiiInternationale: 4,
+                comunicarePR: 3,
+                filosofie: 3,
+                jurnalism: 3
+            }
+        },
+        {
+            text: "Antreprenoriat și business",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 4,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "Artă, design sau creație",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                arhitecturaInterior: 4,
+                arhitectura: 4,
+                fotografieVideo: 4,
+                cinematografie: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce sarcină ai alege într-un proiect de echipă?",
-        answers: [
-            "Analizez datele și găsesc soluții",
-            "Coordonez oamenii și sarcinile",
-            "Prezint rezultatele proiectului",
-            "Mă ocup de partea vizuală și creativă",
-            "Testez practic dacă soluția funcționează"
-        ]
-    },
+   {
+    question: "Ce sarcină ai alege într-un proiect de echipă?",
+    answers: [
+        {
+            text: "Analizez datele și găsesc soluții",
+            scores: {
+                dataScience: 5,
+                statistica: 4,
+                informatica: 4,
+                matematicaInformatica: 4,
+                ciberneticaEconomica: 3,
+                informaticaEconomica: 3
+            }
+        },
+        {
+            text: "Coordonez oamenii și sarcinile",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 4,
+                resurseUmane: 4,
+                administratiePublica: 3,
+                turism: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Prezint rezultatele proiectului",
+            scores: {
+                comunicarePR: 5,
+                jurnalism: 4,
+                publicitate: 4,
+                relatiiInternationale: 3,
+                marketing: 3,
+                drept: 2
+            }
+        },
+        {
+            text: "Mă ocup de partea vizuală și creativă",
+            scores: {
+                design: 5,
+                fotografieVideo: 4,
+                artePlastice: 4,
+                arhitecturaInterior: 4,
+                publicitate: 3,
+                cinematografie: 3
+            }
+        },
+        {
+            text: "Testez practic dacă soluția funcționează",
+            scores: {
+                inginerieMecanica: 5,
+                mecatronica: 5,
+                robotica: 4,
+                autovehiculeRutiere: 4,
+                inginerieElectrica: 4,
+                automatica: 4
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce ai prefera să faci într-o zi liberă?",
-        answers: [
-            "Să descopăr un program sau o tehnologie nouă",
-            "Să citesc despre știință sau sănătate",
-            "Să particip la o activitate cu mulți oameni",
-            "Să creez, să desenez, să scriu sau să filmez",
-            "Să fac sport sau o activitate în aer liber"
-        ]
-    },
+ {
+    question: "Ce ai prefera să faci într-o zi liberă?",
+    answers: [
+        {
+            text: "Să descopăr un program sau o tehnologie nouă",
+            scores: {
+                informatica: 5,
+                informaticaAplicata: 5,
+                inteligentaArtificiala: 4,
+                securitateCibernetica: 4,
+                calculatoare: 4,
+                automatica: 3
+            }
+        },
+        {
+            text: "Să citesc despre știință sau sănătate",
+            scores: {
+                medicina: 5,
+                biologie: 4,
+                biochimie: 4,
+                farmacie: 4,
+                nutritieDietetica: 3,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Să particip la o activitate cu mulți oameni",
+            scores: {
+                turism: 5,
+                geografiaTurismului: 4,
+                educatieFizicaSport: 4,
+                sportPerformanta: 4,
+                comunicarePR: 3,
+                marketing: 3
+            }
+        },
+        {
+            text: "Să creez, să desenez, să scriu sau să filmez",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                litere: 4,
+                fotografieVideo: 4,
+                cinematografie: 4,
+                jurnalism: 3
+            }
+        },
+        {
+            text: "Să fac sport sau o activitate în aer liber",
+            scores: {
+                educatieFizicaSport: 5,
+                sportPerformanta: 5,
+                kinetoterapie: 4,
+                geografiaTurismului: 3,
+                turism: 3,
+                peisagistica: 2
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce tip de problemă ai rezolva cu cea mai mare satisfacție?",
-        answers: [
-            "O problemă tehnică",
-            "O problemă legată de sănătatea unei persoane",
-            "Un conflict între oameni",
-            "O problemă financiară sau de organizare",
-            "O problemă de design sau comunicare"
-        ]
-    },
+   {
+    question: "Ce tip de problemă ai rezolva cu cea mai mare satisfacție?",
+    answers: [
+        {
+            text: "O problemă tehnică",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                inginerieMecanica: 4,
+                automatica: 4,
+                robotica: 4,
+                mecatronica: 4
+            }
+        },
+        {
+            text: "O problemă legată de sănătatea unei persoane",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                farmacie: 4,
+                asistentaMedicala: 4,
+                kinetoterapie: 4,
+                nutritieDietetica: 3
+            }
+        },
+        {
+            text: "Un conflict între oameni",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                resurseUmane: 4,
+                drept: 4,
+                asistentaSociala: 4,
+                administratiePublica: 2
+            }
+        },
+        {
+            text: "O problemă financiară sau de organizare",
+            scores: {
+                economie: 5,
+                finanteBanci: 5,
+                contabilitate: 4,
+                management: 4,
+                administrareaAfacerilor: 4,
+                ciberneticaEconomica: 3
+            }
+        },
+        {
+            text: "O problemă de design sau comunicare",
+            scores: {
+                design: 5,
+                comunicarePR: 5,
+                publicitate: 4,
+                jurnalism: 4,
+                fotografieVideo: 3,
+                artePlastice: 3
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce rezultat al muncii tale ți-ar da cea mai mare satisfacție?",
-        answers: [
-            "Un sistem care funcționează perfect",
-            "O persoană pe care am ajutat-o",
-            "Un proiect profitabil și bine organizat",
-            "O schimbare pozitivă în societate",
-            "O creație originală apreciată de oameni"
-        ]
-    },
-
+   {
+    question: "Ce rezultat al muncii tale ți-ar da cea mai mare satisfacție?",
+    answers: [
+        {
+            text: "Un sistem care funcționează perfect",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                automatica: 4,
+                inteligentaArtificiala: 4,
+                securitateCibernetica: 4,
+                informaticaAplicata: 4
+            }
+        },
+        {
+            text: "O persoană pe care am ajutat-o",
+            scores: {
+                medicina: 5,
+                asistentaMedicala: 5,
+                psihologie: 4,
+                asistentaSociala: 4,
+                kinetoterapie: 3,
+                pedagogie: 3
+            }
+        },
+        {
+            text: "Un proiect profitabil și bine organizat",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                contabilitate: 4,
+                finanteBanci: 4,
+                marketing: 3
+            }
+        },
+        {
+            text: "O schimbare pozitivă în societate",
+            scores: {
+                stiintePolitice: 5,
+                administratiePublica: 4,
+                drept: 4,
+                relatiiInternationale: 4,
+                asistentaSociala: 4,
+                sociologie: 3
+            }
+        },
+        {
+            text: "O creație originală apreciată de oameni",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                muzica: 3,
+                teatru: 3
+            }
+        }
+    ]
+},
 
     // CAPITOLUL 3
     // Aptitudini și mod de gândire
