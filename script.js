@@ -1491,143 +1491,740 @@ const questions = [
     // CAPITOLUL 5
     // Valori și motivații de carieră
 
+   
+
+   {
+    question: "Ce contează cel mai mult pentru tine într-o carieră?",
+    answers: [
+        {
+            text: "Să rezolv probleme complexe",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                matematicaInformatica: 4,
+                inginerieMecanica: 4,
+                calculatoare: 4,
+                dataScience: 4
+            }
+        },
+        {
+            text: "Să ajut oamenii",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                pedagogie: 4,
+                asistentaSociala: 4,
+                kinetoterapie: 4
+            }
+        },
+        {
+            text: "Să am stabilitate financiară",
+            scores: {
+                economie: 5,
+                finanteBanci: 5,
+                contabilitate: 5,
+                informaticaEconomica: 4,
+                administrareaAfacerilor: 4,
+                management: 3
+            }
+        },
+        {
+            text: "Să am influență și responsabilitate",
+            scores: {
+                drept: 5,
+                management: 5,
+                stiintePolitice: 5,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                relatiiInternationale: 4
+            }
+        },
+        {
+            text: "Să mă exprim liber și creativ",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 5,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                litere: 4
+            }
+        }
+    ]
+},
     {
-        question: "Ce contează cel mai mult pentru tine într-o carieră?",
-        answers: [
-            "Să rezolv probleme complexe",
-            "Să ajut oamenii",
-            "Să am stabilitate financiară",
-            "Să am influență și responsabilitate",
-            "Să mă exprim liber și creativ"
-        ]
-    },
+    question: "Ce tip de succes te-ar face cel mai mândru?",
+    answers: [
+        {
+            text: "Să inventez sau să dezvolt ceva util",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                inginerieMecanica: 4,
+                robotica: 4,
+                mecatronica: 4,
+                inginerieElectrica: 3
+            }
+        },
+        {
+            text: "Să îmbunătățesc viața unor oameni",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                kinetoterapie: 4,
+                pedagogie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Să construiesc o afacere de succes",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "Să contribui la o schimbare importantă în societate",
+            scores: {
+                drept: 5,
+                stiintePolitice: 5,
+                administratiePublica: 5,
+                relatiiInternationale: 4,
+                sociologie: 4,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Să creez ceva cunoscut și apreciat",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                cinematografie: 5,
+                publicitate: 4,
+                fotografieVideo: 4,
+                muzica: 3,
+                teatru: 3
+            }
+        }
+    ]
+},
+
+   {
+    question: "Ce ai vrea să spună oamenii despre munca ta?",
+    answers: [
+        {
+            text: "Este inteligentă și inovatoare",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                inginerieMecanica: 4,
+                robotica: 4,
+                matematicaInformatica: 4,
+                dataScience: 3
+            }
+        },
+        {
+            text: "Este utilă și ajută oamenii",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                pedagogie: 4,
+                kinetoterapie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Este eficientă și produce rezultate",
+            scores: {
+                economie: 5,
+                management: 5,
+                administrareaAfacerilor: 5,
+                finanteBanci: 4,
+                contabilitate: 4,
+                marketing: 3
+            }
+        },
+        {
+            text: "Are impact asupra societății",
+            scores: {
+                drept: 5,
+                stiintePolitice: 5,
+                administratiePublica: 4,
+                relatiiInternationale: 4,
+                sociologie: 4,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Este originală și memorabilă",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                cinematografie: 5,
+                publicitate: 4,
+                fotografieVideo: 4,
+                arhitecturaInterior: 4
+            }
+        }
+    ]
+},
+
+   {
+    question: "Care dintre aceste obiective te atrage cel mai mult?",
+    answers: [
+        {
+            text: "Să devin expert într-un domeniu tehnic",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                matematicaInformatica: 4,
+                inteligentaArtificiala: 4,
+                inginerieMecanica: 4,
+                robotica: 3
+            }
+        },
+        {
+            text: "Să descopăr lucruri noi prin cercetare",
+            scores: {
+                biologie: 5,
+                biochimie: 5,
+                fizica: 5,
+                chimie: 4,
+                biotehnologii: 4,
+                geologie: 3
+            }
+        },
+        {
+            text: "Să conduc proiecte sau organizații",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                resurseUmane: 3
+            }
+        },
+        {
+            text: "Să lucrez pentru oameni și comunitate",
+            scores: {
+                psihologie: 5,
+                drept: 5,
+                asistentaSociala: 5,
+                pedagogie: 4,
+                administratiePublica: 4,
+                sociologie: 4
+            }
+        },
+        {
+            text: "Să creez proiecte originale",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 5,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                arhitecturaInterior: 4
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce risc ai accepta mai ușor în carieră?",
+    answers: [
+        {
+            text: "Să învăț permanent tehnologii noi",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                calculatoare: 4,
+                dataScience: 4,
+                securitateCibernetica: 4,
+                informaticaAplicata: 3
+            }
+        },
+        {
+            text: "Să petrec mulți ani pregătindu-mă pentru o profesie",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 5,
+                farmacie: 4,
+                drept: 4,
+                psihologie: 3,
+                inginerieMedicala: 3
+            }
+        },
+        {
+            text: "Să pornesc propria afacere",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "Să îmi asum decizii importante pentru alții",
+            scores: {
+                drept: 5,
+                management: 5,
+                medicina: 4,
+                administratiePublica: 4,
+                stiintePolitice: 4,
+                resurseUmane: 3
+            }
+        },
+        {
+            text: "Să aleg un drum creativ și mai puțin previzibil",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 5,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                teatru: 3
+            }
+        }
+    ]
+},
 
     {
-        question: "Ce tip de succes te-ar face cel mai mândru?",
-        answers: [
-            "Să inventez sau să dezvolt ceva util",
-            "Să îmbunătățesc viața unor oameni",
-            "Să construiesc o afacere de succes",
-            "Să contribui la o schimbare importantă în societate",
-            "Să creez ceva cunoscut și apreciat"
-        ]
-    },
-
-    {
-        question: "Ce ai vrea să spună oamenii despre munca ta?",
-        answers: [
-            "Este inteligentă și inovatoare",
-            "Este utilă și ajută oamenii",
-            "Este eficientă și produce rezultate",
-            "Are impact asupra societății",
-            "Este originală și memorabilă"
-        ]
-    },
-
-    {
-        question: "Care dintre aceste obiective te atrage cel mai mult?",
-        answers: [
-            "Să devin expert într-un domeniu tehnic",
-            "Să descopăr lucruri noi prin cercetare",
-            "Să conduc proiecte sau organizații",
-            "Să lucrez pentru oameni și comunitate",
-            "Să creez proiecte originale"
-        ]
-    },
-
-    {
-        question: "Ce risc ai accepta mai ușor în carieră?",
-        answers: [
-            "Să învăț permanent tehnologii noi",
-            "Să petrec mulți ani pregătindu-mă pentru o profesie",
-            "Să pornesc propria afacere",
-            "Să îmi asum decizii importante pentru alții",
-            "Să aleg un drum creativ și mai puțin previzibil"
-        ]
-    },
-
-    {
-        question: "Ce te motivează cel mai mult să continui când ceva este dificil?",
-        answers: [
-            "Dorința de a găsi soluția",
-            "Faptul că rezultatul poate ajuta pe cineva",
-            "Ambiția de a reuși",
-            "Responsabilitatea față de ceilalți",
-            "Dorința de a crea ceva personal"
-        ]
-    },
-
+    question: "Ce te motivează cel mai mult să continui când ceva este dificil?",
+    answers: [
+        {
+            text: "Dorința de a găsi soluția",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                calculatoare: 4,
+                inginerieMecanica: 4,
+                robotica: 4,
+                dataScience: 3
+            }
+        },
+        {
+            text: "Faptul că rezultatul poate ajuta pe cineva",
+            scores: {
+                medicina: 5,
+                psihologie: 5,
+                asistentaMedicala: 5,
+                pedagogie: 4,
+                kinetoterapie: 4,
+                asistentaSociala: 4
+            }
+        },
+        {
+            text: "Ambiția de a reuși",
+            scores: {
+                economie: 5,
+                management: 5,
+                administrareaAfacerilor: 5,
+                finanteBanci: 4,
+                marketing: 4,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Responsabilitatea față de ceilalți",
+            scores: {
+                drept: 5,
+                medicina: 4,
+                management: 4,
+                administratiePublica: 4,
+                stiintePolitice: 4,
+                resurseUmane: 3
+            }
+        },
+        {
+            text: "Dorința de a crea ceva personal",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                litere: 3
+            }
+        }
+    ]
+},
 
     // CAPITOLUL 6
     // Scenarii și situații concrete
 
-    {
-        question: "Un oraș are o problemă importantă. Cum ai prefera să contribui?",
-        answers: [
-            "Aș crea o soluție tehnologică",
-            "Aș analiza efectele asupra sănătății și mediului",
-            "Aș construi un plan financiar și de management",
-            "Aș lucra cu oamenii și instituțiile pentru o soluție",
-            "Aș crea o campanie publică de informare"
-        ]
-    },
-
-    {
-        question: "Primești finanțare pentru un proiect. Ce ai crea?",
-        answers: [
-            "O aplicație sau un sistem inteligent",
-            "Un proiect de cercetare medicală sau științifică",
-            "Un startup",
-            "Un program educațional sau social",
-            "Un film, un produs de design sau o campanie creativă"
-        ]
-    },
-
-    {
-        question: "O echipă nu reușește să termine un proiect. Ce faci?",
-        answers: [
-            "Analizez problema și găsesc cauza",
-            "Verific dacă lipsesc informații sau cercetări",
-            "Reorganizez planul și resursele",
-            "Discut cu membrii echipei și rezolv conflictele",
-            "Propun o soluție complet diferită"
-        ]
-    },
-
-    {
-        question: "Dacă ai putea face un stagiu pentru o săptămână, ce ai alege?",
-        answers: [
-            "O companie de tehnologie",
-            "Un spital sau laborator",
-            "O bancă sau companie internațională",
-            "O instanță, instituție publică sau organizație socială",
-            "Un studio de design, televiziune sau agenție creativă"
-        ]
-    },
-
-    {
-        question: "Ai de prezentat o idee importantă. Cum te pregătești?",
-        answers: [
-            "Construiesc argumente logice și folosesc date",
-            "Verific atent toate informațiile și dovezile",
-            "Mă concentrez pe beneficii și rezultate",
-            "Mă gândesc cum va reacționa publicul",
-            "Creez o prezentare vizuală și originală"
-        ]
-    },
-
-    {
-        question: "Dacă ai putea rezolva o singură problemă mare, ce ai alege?",
-        answers: [
-            "Dezvoltarea unor tehnologii mai inteligente și sigure",
-            "Vindecarea sau prevenirea unor boli",
-            "Crearea unor oportunități economice mai bune",
-            "Reducerea problemelor sociale și a nedreptății",
-            "Îmbunătățirea educației, culturii și comunicării"
-        ]
+   {
+    question: "Un oraș are o problemă importantă. Cum ai prefera să contribui?",
+    answers: [
+        {
+            text: "Aș crea o soluție tehnologică",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                informaticaAplicata: 4,
+                automatica: 4,
+                inteligentaArtificiala: 4,
+                robotica: 3
+            }
+        },
+      {
+    text: "Aș analiza efectele asupra sănătății și mediului",
+    scores: {
+        medicina: 5,
+        biologie: 4,
+        stiintaMediului: 5,
+        ingineriaMediului: 4,
+        nutritieDietetica: 3,
+        farmacie: 3
     }
+},
+        {
+            text: "Aș construi un plan financiar și de management",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                finanteBanci: 4,
+                contabilitate: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Aș lucra cu oamenii și instituțiile pentru o soluție",
+            scores: {
+                drept: 5,
+                administratiePublica: 5,
+                stiintePolitice: 4,
+                sociologie: 4,
+                relatiiInternationale: 3,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Aș crea o campanie publică de informare",
+            scores: {
+                comunicarePR: 5,
+                jurnalism: 5,
+                publicitate: 5,
+                marketing: 4,
+                fotografieVideo: 3,
+                litere: 3
+            }
+        }
+    ]
+},
 
-];
+  {
+    question: "Primești finanțare pentru un proiect. Ce ai crea?",
+    answers: [
+        {
+            text: "O aplicație sau un sistem inteligent",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                inteligentaArtificiala: 5,
+                informaticaAplicata: 4,
+                automatica: 4,
+                securitateCibernetica: 3
+            }
+        },
+        {
+            text: "Un proiect de cercetare medicală sau științifică",
+            scores: {
+                medicina: 5,
+                biologie: 5,
+                biochimie: 5,
+                farmacie: 4,
+                chimie: 4,
+                fizica: 3
+            }
+        },
+        {
+            text: "Un startup",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "Un program educațional sau social",
+            scores: {
+                pedagogie: 5,
+                asistentaSociala: 5,
+                psihologie: 4,
+                sociologie: 4,
+                educatieTimpurie: 3,
+                invatamantPrimar: 3
+            }
+        },
+        {
+            text: "Un film, un produs de design sau o companie creativă",
+            scores: {
+                cinematografie: 5,
+                design: 5,
+                publicitate: 5,
+                fotografieVideo: 4,
+                artePlastice: 4,
+                comunicarePR: 3
+            }
+        }
+    ]
+},
+   {
+    question: "O echipă nu reușește să termine un proiect. Ce faci?",
+    answers: [
+        {
+            text: "Analizez problema și găsesc cauza",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                dataScience: 4,
+                inginerieIndustriala: 4,
+                inginerieMecanica: 3,
+                automatica: 3
+            }
+        },
+        {
+            text: "Verific dacă lipsesc informații sau cercetări",
+            scores: {
+                biologie: 5,
+                biochimie: 5,
+                chimie: 4,
+                fizica: 4,
+                medicina: 3,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Reorganizez planul și resursele",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                contabilitate: 4,
+                administratiePublica: 3,
+                turism: 3
+            }
+        },
+        {
+            text: "Discut cu membrii echipei și rezolv conflictele",
+            scores: {
+                psihologie: 5,
+                resurseUmane: 5,
+                sociologie: 4,
+                asistentaSociala: 4,
+                drept: 3,
+                comunicarePR: 3
+            }
+        },
+        {
+            text: "Propun o soluție complet diferită",
+            scores: {
+                design: 5,
+                publicitate: 5,
+                artePlastice: 4,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                arhitecturaInterior: 3
+            }
+        }
+    ]
+},
+
+   {
+    question: "Dacă ai putea face un stagiu pentru o săptămână, ce ai alege?",
+    answers: [
+        {
+            text: "O companie de tehnologie",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                informaticaAplicata: 4,
+                inteligentaArtificiala: 4,
+                automatica: 3,
+                securitateCibernetica: 3
+            }
+        },
+        {
+            text: "Un spital sau laborator",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                farmacie: 4,
+                biologie: 4,
+                biochimie: 4,
+                asistentaMedicala: 3
+            }
+        },
+        {
+            text: "O bancă sau companie internațională",
+            scores: {
+                economie: 5,
+                finanteBanci: 5,
+                afaceriInternationale: 5,
+                administrareaAfacerilor: 4,
+                contabilitate: 3,
+                management: 3
+            }
+        },
+        {
+            text: "O instanță, instituție publică sau organizație socială",
+            scores: {
+                drept: 5,
+                administratiePublica: 5,
+                stiintePolitice: 4,
+                asistentaSociala: 4,
+                sociologie: 3,
+                relatiiInternationale: 3
+            }
+        },
+        {
+            text: "Un studio de design, televiziune sau agenție creativă",
+            scores: {
+                design: 5,
+                cinematografie: 5,
+                fotografieVideo: 5,
+                publicitate: 4,
+                comunicarePR: 4,
+                jurnalism: 3
+            }
+        }
+    ]
+},
+   {
+    question: "Ai de prezentat o idee importantă. Cum te pregătești?",
+    answers: [
+        {
+            text: "Construiesc argumente logice și folosesc date",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                economie: 4,
+                drept: 4,
+                dataScience: 4,
+                statistica: 3
+            }
+        },
+        {
+            text: "Verific atent toate informațiile și dovezile",
+            scores: {
+                medicina: 5,
+                biologie: 5,
+                biochimie: 4,
+                chimie: 4,
+                fizica: 3,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Mă concentrez pe beneficii și rezultate",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                marketing: 4,
+                finanteBanci: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Mă gândesc cum va reacționa publicul",
+            scores: {
+                comunicarePR: 5,
+                jurnalism: 5,
+                publicitate: 4,
+                psihologie: 4,
+                marketing: 4,
+                relatiiInternationale: 3
+            }
+        },
+        {
+            text: "Creez o prezentare vizuală și originală",
+            scores: {
+                design: 5,
+                fotografieVideo: 5,
+                cinematografie: 5,
+                artePlastice: 4,
+                publicitate: 4,
+                arhitecturaInterior: 3
+            }
+        }
+    ]
+},
+
+   {
+    question: "Dacă ai putea avea orice rol într-un proiect important, ce ai alege?",
+    answers: [
+        {
+            text: "Să dezvolt soluția tehnică",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                inteligentaArtificiala: 5,
+                automatica: 4,
+                robotica: 4,
+                mecatronica: 3
+            }
+        },
+        {
+            text: "Să cercetez și să analizez informațiile",
+            scores: {
+                biologie: 5,
+                biochimie: 5,
+                fizica: 4,
+                chimie: 4,
+                medicina: 4,
+                stiintaMediului: 3
+            }
+        },
+        {
+            text: "Să coordonez proiectul și oamenii",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                resurseUmane: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Să reprezint și să apăr interesele oamenilor",
+            scores: {
+                drept: 5,
+                stiintePolitice: 5,
+                relatiiInternationale: 4,
+                administratiePublica: 4,
+                comunicarePR: 3,
+                sociologie: 3
+            }
+        },
+        {
+            text: "Să mă ocup de partea creativă",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                cinematografie: 5,
+                fotografieVideo: 4,
+                publicitate: 4,
+                arhitecturaInterior: 4
+            }
+        }
+    ]
+},
 
 let currentQuestion = 0;
 const scores = {
