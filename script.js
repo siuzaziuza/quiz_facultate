@@ -134,49 +134,251 @@ const questions = [
     ]
 },
 
-    {
-        question: "Dacă ai avea o zi întreagă pentru a învăța ceva nou, ce ai alege?",
-        answers: [
-            "Programare sau inteligență artificială",
-            "Anatomie, genetică sau medicină",
-            "Investiții, economie sau antreprenoriat",
-            "Psihologie, istorie sau societate",
-            "Design, fotografie, muzică sau film"
-        ]
-    },
+ {
+    question: "Dacă ai avea o zi întreagă pentru a învăța ceva nou, ce ai alege?",
+    answers: [
+        {
+            text: "Programare sau inteligență artificială",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                informaticaAplicata: 4,
+                calculatoare: 4,
+                securitateCibernetica: 3,
+                dataScience: 3
+            }
+        },
+        {
+            text: "Anatomie, genetică sau medicină",
+            scores: {
+                medicina: 5,
+                biologie: 5,
+                biochimie: 4,
+                medicinaDentara: 4,
+                farmacie: 4,
+                biotehnologii: 3
+            }
+        },
+        {
+            text: "Investiții, economie sau antreprenoriat",
+            scores: {
+                economie: 5,
+                finanteBanci: 5,
+                administrareaAfacerilor: 4,
+                afaceriInternationale: 4,
+                management: 4,
+                marketing: 3
+            }
+        },
+        {
+            text: "Psihologie, istorie sau societate",
+            scores: {
+                psihologie: 5,
+                istorie: 4,
+                sociologie: 4,
+                stiintePolitice: 3,
+                filosofie: 3,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Design, fotografie, muzică sau film",
+            scores: {
+                design: 5,
+                fotografieVideo: 5,
+                muzica: 4,
+                cinematografie: 4,
+                artePlastice: 4,
+                teatru: 3
+            }
+        }
+    ]
+}, 
+
+  {
+    question: "Ce tip de documentar ai urmări cu cel mai mare interes?",
+    answers: [
+        {
+            text: "Tehnologie și invenții",
+            scores: {
+                informatica: 5,
+                inteligentaArtificiala: 5,
+                calculatoare: 4,
+                robotica: 4,
+                automatica: 3,
+                inginerieElectrica: 3
+            }
+        },
+        {
+            text: "Medicină și corpul uman",
+            scores: {
+                medicina: 5,
+                biologie: 5,
+                medicinaDentara: 4,
+                biochimie: 4,
+                farmacie: 4,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Natură și mediul înconjurător",
+            scores: {
+                biologie: 5,
+                stiintaMediului: 5,
+                geologie: 4,
+                silvicultura: 4,
+                agricultura: 3,
+                peisagistica: 3
+            }
+        },
+        {
+            text: "Istorie, politică și societate",
+            scores: {
+                istorie: 5,
+                stiintePolitice: 5,
+                drept: 4,
+                relatiiInternationale: 4,
+                sociologie: 3,
+                filosofie: 3
+            }
+        },
+        {
+            text: "Artă, cultură și creație",
+            scores: {
+                artePlastice: 5,
+                design: 5,
+                cinematografie: 4,
+                teatru: 4,
+                muzica: 4,
+                arhitectura: 3
+            }
+        }
+    ]
+},
+
+  {
+    question: "Ce problemă ți-ar plăcea cel mai mult să înțelegi?",
+    answers: [
+        {
+            text: "Cum poate fi îmbunătățit un sistem tehnologic",
+            scores: {
+                informatica: 5,
+                automatica: 5,
+                calculatoare: 4,
+                informaticaAplicata: 4,
+                robotica: 4,
+                mecatronica: 3
+            }
+        },
+        {
+            text: "Cum pot fi prevenite și tratate bolile",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                farmacie: 4,
+                biologie: 4,
+                biochimie: 4,
+                asistentaMedicala: 3,
+                nutritieDietetica: 3
+            }
+        },
+        {
+            text: "Cum poate deveni o afacere de succes",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 4,
+                marketing: 4,
+                afaceriInternationale: 4,
+                ciberneticaEconomica: 3
+            }
+        },
+        {
+            text: "De ce oamenii iau anumite decizii",
+            scores: {
+                psihologie: 5,
+                sociologie: 4,
+                stiintePolitice: 3,
+                resurseUmane: 3,
+                filosofie: 3,
+                asistentaSociala: 3
+            }
+        },
+        {
+            text: "Cum poate fi transmisă o idee într-un mod original",
+            scores: {
+                comunicarePR: 5,
+                publicitate: 5,
+                jurnalism: 4,
+                design: 4,
+                litere: 4,
+                cinematografie: 3
+            }
+        }
+    ]
+}, 
 
     {
-        question: "Ce tip de documentar ai urmări cu cel mai mare interes?",
-        answers: [
-            "Tehnologie și invenții",
-            "Medicină și corpul uman",
-            "Natură și mediul înconjurător",
-            "Istorie, politică și societate",
-            "Artă, cultură și creație"
-        ]
-    },
-
-    {
-        question: "Ce problemă ți-ar plăcea cel mai mult să înțelegi?",
-        answers: [
-            "Cum poate fi îmbunătățit un sistem tehnologic",
-            "Cum pot fi prevenite și tratate bolile",
-            "Cum poate deveni o afacere de succes",
-            "De ce oamenii iau anumite decizii",
-            "Cum poate fi transmisă o idee într-un mod original"
-        ]
-    },
-
-    {
-        question: "În ce tip de proiect școlar te-ai implica cu cel mai mare interes?",
-        answers: [
-            "Construirea unei aplicații sau a unui robot",
-            "Un experiment de laborator",
-            "Crearea unui plan de afaceri",
-            "O dezbatere despre o problemă socială",
-            "Realizarea unui proiect artistic sau media"
-        ]
-    },
+    question: "În ce tip de proiect școlar te-ai implica cu cel mai mare interes?",
+    answers: [
+        {
+            text: "Construirea unei aplicații sau a unui robot",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                robotica: 5,
+                automatica: 4,
+                mecatronica: 4,
+                informaticaAplicata: 4
+            }
+        },
+        {
+            text: "Un experiment de laborator",
+            scores: {
+                biologie: 5,
+                chimie: 5,
+                biochimie: 5,
+                fizica: 4,
+                biotehnologii: 4,
+                medicina: 3
+            }
+        },
+        {
+            text: "Crearea unui plan de afaceri",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 4,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "O dezbatere despre o problemă socială",
+            scores: {
+                drept: 5,
+                stiintePolitice: 5,
+                sociologie: 4,
+                psihologie: 4,
+                relatiiInternationale: 4,
+                filosofie: 3
+            }
+        },
+        {
+            text: "Realizarea unui proiect artistic sau media",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                cinematografie: 5,
+                fotografieVideo: 4,
+                publicitate: 4,
+                comunicarePR: 3,
+                teatru: 3
+            }
+        }
+    ]
+},
 
 
     // CAPITOLUL 2
