@@ -1124,71 +1124,368 @@ const questions = [
     // CAPITOLUL 4
     // Stil de lucru și personalitate profesională
 
-    {
-        question: "În ce mediu ai prefera să lucrezi?",
-        answers: [
-            "Într-un birou modern sau de acasă",
-            "Într-un laborator sau spital",
-            "Într-o companie dinamică",
-            "În contact permanent cu oamenii",
-            "Într-un studio, atelier sau spațiu creativ"
-        ]
-    },
+  {
+    question: "În ce mediu ai prefera să lucrezi?",
+    answers: [
+        {
+            text: "Într-un birou modern sau de acasă",
+            scores: {
+                informatica: 5,
+                informaticaAplicata: 5,
+                informaticaEconomica: 4,
+                dataScience: 4,
+                marketing: 3,
+                contabilitate: 3
+            }
+        },
+        {
+            text: "Într-un laborator sau spital",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                farmacie: 5,
+                biologie: 4,
+                biochimie: 4,
+                inginerieMedicala: 3
+            }
+        },
+        {
+            text: "Într-o companie dinamică",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                marketing: 4,
+                afaceriInternationale: 4,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "În contact permanent cu oamenii",
+            scores: {
+                psihologie: 5,
+                drept: 4,
+                pedagogie: 4,
+                asistentaSociala: 5,
+                comunicarePR: 4,
+                resurseUmane: 4
+            }
+        },
+        {
+            text: "Într-un studio, atelier sau spațiu creativ",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                arhitecturaInterior: 5,
+                fotografieVideo: 4,
+                cinematografie: 4,
+                publicitate: 4
+            }
+        }
+    ]
+},
+   {
+    question: "Cum preferi să lucrezi?",
+    answers: [
+       {
+    text: "Singur și foarte concentrat",
+    scores: {
+        informatica: 5,
+        matematica: 5,
+        matematicaInformatica: 4,
+        dataScience: 4,
+        statistica: 3,
+        fizica: 3
+    }
+},
+        {
+            text: "Într-o echipă de specialiști",
+            scores: {
+                medicina: 4,
+                inginerieMecanica: 4,
+                inginerieMedicala: 4,
+                biochimie: 4,
+                fizica: 3,
+                inginerieElectrica: 3
+            }
+        },
+        {
+            text: "Coordonând o echipă",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                resurseUmane: 4,
+                administratiePublica: 4,
+                marketing: 3,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "În contact direct cu oamenii",
+            scores: {
+                psihologie: 5,
+                drept: 5,
+                pedagogie: 4,
+                asistentaSociala: 4,
+                comunicarePR: 4,
+                medicina: 3
+            }
+        },
+        {
+            text: "Cu multă libertate și flexibilitate",
+            scores: {
+                design: 5,
+                publicitate: 5,
+                fotografieVideo: 4,
+                cinematografie: 4,
+                jurnalism: 4,
+                litere: 3
+            }
+        }
+    ]
+},
+  {
+    question: "Ce tip de program de lucru ai prefera?",
+    answers: [
+        {
+            text: "Previzibil și bine organizat",
+            scores: {
+                contabilitate: 5,
+                finanteBanci: 5,
+                administratiePublica: 4,
+                farmacie: 3,
+                matematica: 3,
+                statistica: 3
+            }
+        },
+        {
+            text: "Intens, dacă munca are un scop important",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 4,
+                inginerieMedicala: 4,
+                drept: 4,
+                psihologie: 3,
+                asistentaMedicala: 3
+            }
+        },
+        {
+            text: "Dinamic, cu multe proiecte diferite",
+            scores: {
+                informatica: 5,
+                management: 5,
+                marketing: 4,
+                administrareaAfacerilor: 4,
+                publicitate: 4,
+                comunicarePR: 3
+            }
+        },
+        {
+            text: "Flexibil și independent",
+            scores: {
+                design: 5,
+                fotografieVideo: 5,
+                jurnalism: 4,
+                litere: 4,
+                publicitate: 4,
+                artePlastice: 3
+            }
+        },
+        {
+            text: "Activ, cu deplasări și schimbări frecvente",
+            scores: {
+                turism: 5,
+                geografiaTurismului: 5,
+                afaceriInternationale: 4,
+                jurnalism: 3,
+                management: 3,
+                sportPerformanta: 3
+            }
+        }
+    ]
+},
+
+   {
+    question: "Cum te simți când trebuie să vorbești în fața unui grup?",
+    answers: [
+        {
+            text: "Prefer să evit și să lucrez în culise",
+            scores: {
+                informatica: 5,
+                matematica: 4,
+                contabilitate: 4,
+                informaticaAplicata: 3,
+                statistica: 3
+            }
+        },
+        {
+            text: "Pot vorbi dacă stăpânesc foarte bine subiectul",
+            scores: {
+                medicina: 4,
+                drept: 4,
+                inginerieMecanica: 4,
+                fizica: 3,
+                informatica: 3,
+                economie: 3
+            }
+        },
+        {
+            text: "Îmi place să explic și să conving",
+            scores: {
+                drept: 5,
+                comunicarePR: 5,
+                jurnalism: 4,
+                marketing: 4,
+                pedagogie: 4,
+                publicitate: 3
+            }
+        },
+        {
+            text: "Îmi place să conduc discuția",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                stiintePolitice: 4,
+                administratiePublica: 4,
+                afaceriInternationale: 4,
+                resurseUmane: 3
+            }
+        },
+        {
+            text: "Prefer să transmit ideile prin creație",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                cinematografie: 5,
+                fotografieVideo: 4,
+                publicitate: 4,
+                teatru: 3
+            }
+        }
+    ]
+},
 
     {
-        question: "Cum preferi să lucrezi?",
-        answers: [
-            "Singur și foarte concentrat",
-            "Într-o echipă de specialiști",
-            "Coordonând o echipă",
-            "În contact direct cu oamenii",
-            "Cu multă libertate și flexibilitate"
-        ]
-    },
+    question: "Ce fel de responsabilitate ai prefera?",
+    answers: [
+        {
+            text: "Să răspund de corectitudinea unei soluții",
+            scores: {
+                informatica: 5,
+                matematica: 5,
+                inginerieMecanica: 4,
+                calculatoare: 4,
+                automatica: 4,
+                inginerieElectrica: 3
+            }
+        },
+        {
+            text: "Să răspund de sănătatea sau binele oamenilor",
+            scores: {
+                medicina: 5,
+                medicinaDentara: 5,
+                asistentaMedicala: 5,
+                farmacie: 4,
+                psihologie: 4,
+                kinetoterapie: 3
+            }
+        },
+        {
+            text: "Să răspund de succesul unui proiect",
+            scores: {
+                management: 5,
+                administrareaAfacerilor: 5,
+                economie: 4,
+                marketing: 4,
+                afaceriInternationale: 3,
+                finanteBanci: 3
+            }
+        },
+        {
+            text: "Să răspund de o echipă",
+            scores: {
+                management: 5,
+                resurseUmane: 5,
+                administrareaAfacerilor: 4,
+                administratiePublica: 4,
+                stiintePolitice: 3,
+                turism: 3
+            }
+        },
+        {
+            text: "Să răspund de calitatea unei creații",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                arhitectura: 5,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                publicitate: 4
+            }
+        }
+    ]
+},
 
-    {
-        question: "Ce tip de program de lucru ai prefera?",
-        answers: [
-            "Previzibil și bine organizat",
-            "Intens, dacă munca are un scop important",
-            "Dinamic, cu multe proiecte diferite",
-            "Flexibil și independent",
-            "Activ, cu deplasări și schimbări frecvente"
-        ]
-    },
-
-    {
-        question: "Cum te simți când trebuie să vorbești în fața unui grup?",
-        answers: [
-            "Prefer să evit și să lucrez în culise",
-            "Pot vorbi dacă stăpânesc foarte bine subiectul",
-            "Îmi place să explic și să conving",
-            "Îmi place să conduc discuția",
-            "Prefer să transmit ideile prin creație"
-        ]
-    },
-
-    {
-        question: "Ce fel de responsabilitate ai prefera?",
-        answers: [
-            "Să răspund de corectitudinea unei soluții",
-            "Să răspund de sănătatea sau binele oamenilor",
-            "Să răspund de succesul unui proiect",
-            "Să răspund de o echipă",
-            "Să răspund de calitatea unei creații"
-        ]
-    },
-
-    {
-        question: "Ce tip de muncă te-ar obosi cel mai puțin?",
-        answers: [
-            "Analiză și concentrare îndelungată",
-            "Activitate practică și precisă",
-            "Discuții și interacțiune cu oamenii",
-            "Organizare și luarea deciziilor",
-            "Creație și experimentare"
-        ]
-    },
+   {
+    question: "Ce te-ar face să fii mulțumit(ă) de locul tău de muncă?",
+    answers: [
+        {
+            text: "Să rezolv probleme și să văd rezultate concrete",
+            scores: {
+                informatica: 5,
+                calculatoare: 5,
+                matematica: 4,
+                inginerieMecanica: 4,
+                robotica: 4,
+                automatica: 4
+            }
+        },
+        {
+            text: "Să știu că ajut oameni în mod direct",
+            scores: {
+                medicina: 5,
+                asistentaMedicala: 5,
+                psihologie: 5,
+                asistentaSociala: 4,
+                pedagogie: 4,
+                kinetoterapie: 4
+            }
+        },
+        {
+            text: "Să am rezultate bune și oportunități de dezvoltare",
+            scores: {
+                economie: 5,
+                administrareaAfacerilor: 5,
+                management: 5,
+                marketing: 4,
+                finanteBanci: 4,
+                afaceriInternationale: 3
+            }
+        },
+        {
+            text: "Să am libertatea de a-mi folosi ideile",
+            scores: {
+                design: 5,
+                artePlastice: 5,
+                publicitate: 5,
+                cinematografie: 4,
+                fotografieVideo: 4,
+                litere: 3
+            }
+        },
+        {
+            text: "Să am un impact pozitiv asupra societății",
+            scores: {
+                drept: 5,
+                stiintePolitice: 5,
+                administratiePublica: 4,
+                relatiiInternationale: 4,
+                sociologie: 4,
+                asistentaSociala: 3
+            }
+        }
+    ]
+},
 
 
     // CAPITOLUL 5
