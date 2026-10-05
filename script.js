@@ -2650,12 +2650,15 @@ const scores = {
     muzica: 0,
 
     // AGRICULTURĂ ȘI NATURĂ
-    agricultura: 0,
-    horticultura: 0,
-    silvicultura: 0,
-    zootehnie: 0,
-    peisagistica: 0,
-    inginerieAlimentara: 0,
+agricultura: 0,
+agronomie: 0,
+horticultura: 0,
+silvicultura: 0,
+zootehnie: 0,
+medicinaVeterinara: 0,
+peisagistica: 0,
+inginerieAlimentara: 0,
+geografie: 0,
 
     // SPORT ȘI TURISM
     educatieFizicaSport: 0,
