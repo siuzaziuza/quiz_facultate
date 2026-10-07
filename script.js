@@ -3341,9 +3341,7 @@ function nextQuestion() {
                 Number.isFinite(scores[profile])
             ) {
 
-                const percentage = Math.round(
-                    (scores[profile] / maxScores[profile]) * 100
-                );
+                const percentage = scores[profile];
 
                 results.push({
                     name: profileNames[profile],
@@ -3352,6 +3350,17 @@ function nextQuestion() {
                 });
             }
         }
+
+        // Transformăm punctajele în procente
+const highestScore = Math.max(
+    ...results.map(result => result.score)
+);
+
+results.forEach(result => {
+    result.percentage = Math.round(
+        (result.score / highestScore) * 100
+    );
+});
 
         // Sortăm de la cel mai mare procent la cel mai mic
         results.sort((a, b) => {
