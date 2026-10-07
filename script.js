@@ -3168,25 +3168,237 @@ function selectAnswer(answerIndex) {
     nextQuestion();
 }
 function nextQuestion() {
-
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-
         showQuestion();
-
     } else {
 
         document.getElementById("quiz-screen").style.display = "none";
-
         document.getElementById("result-screen").style.display = "block";
-
         document.getElementById("progress-bar").style.width = "100%";
 
-        document.getElementById("results").innerHTML = `
-            <h2>🎉 Felicitări!</h2>
-            <p>Ai terminat testul.</p>
-            <p>În etapa următoare vom calcula automat Top 5 facultăți potrivite pentru tine.</p>
+        const profileNames = {
+            informatica: "Informatică",
+            informaticaAplicata: "Informatică Aplicată",
+            informaticaIndustriala: "Informatică Industrială",
+            inteligentaArtificiala: "Inteligență Artificială",
+            calculatoare: "Calculatoare",
+            automatica: "Automatică",
+            securitateCibernetica: "Securitate Cibernetică",
+            informaticaEconomica: "Informatică Economică",
+            dataScience: "Data Science",
+
+            matematica: "Matematică",
+            matematicaInformatica: "Matematică-Informatică",
+            statistica: "Statistică",
+            fizica: "Fizică",
+            chimie: "Chimie",
+
+            inginerieMecanica: "Inginerie Mecanică",
+            mecatronica: "Mecatronică",
+            robotica: "Robotică",
+            inginerieElectrica: "Inginerie Electrică",
+            energetica: "Energetică",
+            electronicaTelecomunicatii: "Electronică și Telecomunicații",
+            inginerieMedicala: "Inginerie Medicală",
+            inginerieAerospatiala: "Inginerie Aerospațială",
+            autovehiculeRutiere: "Autovehicule Rutiere",
+            inginerieIndustriala: "Inginerie Industrială",
+            ingineriaMaterialelor: "Ingineria Materialelor",
+            inginerieChimica: "Inginerie Chimică",
+            ingineriaMediului: "Ingineria Mediului",
+            constructii: "Construcții",
+            instalatiiConstructii: "Instalații pentru Construcții",
+            geodezie: "Geodezie",
+
+            medicina: "Medicină",
+            medicinaDentara: "Medicină Dentară",
+            farmacie: "Farmacie",
+            asistentaMedicala: "Asistență Medicală",
+            nutritieDietetica: "Nutriție și Dietetică",
+            kinetoterapie: "Kinetoterapie",
+
+            biologie: "Biologie",
+            biochimie: "Biochimie",
+            biotehnologii: "Biotehnologii",
+            geologie: "Geologie",
+            stiintaMediului: "Știința Mediului",
+
+            economie: "Economie",
+            afaceriInternationale: "Afaceri Internaționale",
+            finanteBanci: "Finanțe și Bănci",
+            contabilitate: "Contabilitate",
+            management: "Management",
+            marketing: "Marketing",
+            administrareaAfacerilor: "Administrarea Afacerilor",
+            ciberneticaEconomica: "Cibernetică Economică",
+
+            drept: "Drept",
+            administratiePublica: "Administrație Publică",
+            stiintePolitice: "Științe Politice",
+            relatiiInternationale: "Relații Internaționale",
+
+            psihologie: "Psihologie",
+            sociologie: "Sociologie",
+            resurseUmane: "Resurse Umane",
+            asistentaSociala: "Asistență Socială",
+
+            pedagogie: "Pedagogie",
+            invatamantPrimar: "Învățământ Primar",
+            educatieTimpurie: "Educație Timpurie",
+
+            jurnalism: "Jurnalism",
+            comunicarePR: "Comunicare și PR",
+            publicitate: "Publicitate",
+            limbiModerneAplicate: "Limbi Moderne Aplicate",
+            litere: "Litere",
+            istorie: "Istorie",
+            filosofie: "Filosofie",
+
+            arhitectura: "Arhitectură",
+            arhitecturaInterior: "Arhitectură de Interior",
+            urbanism: "Urbanism",
+            design: "Design",
+            artePlastice: "Arte Plastice",
+            fotografieVideo: "Fotografie și Video",
+            cinematografie: "Cinematografie",
+            teatru: "Teatru",
+            muzica: "Muzică",
+
+            agricultura: "Agricultură",
+            agronomie: "Agronomie",
+            horticultura: "Horticultură",
+            silvicultura: "Silvicultură",
+            zootehnie: "Zootehnie",
+            medicinaVeterinara: "Medicină Veterinară",
+            peisagistica: "Peisagistică",
+            inginerieAlimentara: "Inginerie Alimentară",
+            geografie: "Geografie",
+
+            educatieFizicaSport: "Educație Fizică și Sport",
+            sportPerformanta: "Sport de Performanță",
+            geografiaTurismului: "Geografia Turismului",
+            turism: "Turism",
+
+            teologie: "Teologie",
+            studiiMilitare: "Studii Militare",
+            aparareSecuritate: "Apărare și Securitate",
+            ordinePublica: "Ordine Publică",
+            politie: "Poliție",
+            transporturi: "Transporturi",
+            aviatie: "Aviație",
+            marina: "Marină"
+        };
+
+        // Calculăm punctajul maxim posibil pentru fiecare profil
+        const maxScores = {};
+
+        questions.forEach(question => {
+
+            const questionMax = {};
+
+            question.answers.forEach(answer => {
+
+                if (
+                    typeof answer === "object" &&
+                    answer.scores
+                ) {
+                    for (const profile in answer.scores) {
+
+                        const points = answer.scores[profile];
+
+                        if (typeof points === "number") {
+                            if (
+                                questionMax[profile] === undefined ||
+                                points > questionMax[profile]
+                            ) {
+                                questionMax[profile] = points;
+                            }
+                        }
+                    }
+                }
+            });
+
+            for (const profile in questionMax) {
+
+                if (maxScores[profile] === undefined) {
+                    maxScores[profile] = 0;
+                }
+
+                maxScores[profile] += questionMax[profile];
+            }
+        });
+
+        // Construim rezultatele
+        const results = [];
+
+        for (const profile in scores) {
+
+            if (
+                profileNames[profile] &&
+                maxScores[profile] > 0 &&
+                Number.isFinite(scores[profile])
+            ) {
+
+                const percentage = Math.round(
+                    (scores[profile] / maxScores[profile]) * 100
+                );
+
+                results.push({
+                    name: profileNames[profile],
+                    score: scores[profile],
+                    percentage: Math.min(100, percentage)
+                });
+            }
+        }
+
+        // Sortăm de la cel mai mare procent la cel mai mic
+        results.sort((a, b) => {
+            if (b.percentage !== a.percentage) {
+                return b.percentage - a.percentage;
+            }
+
+            return b.score - a.score;
+        });
+
+        // Luăm primele 5 facultăți
+        const top5 = results.slice(0, 5);
+
+        let resultHTML = `
+            <h2>🎉 Rezultatele tale</h2>
+
+            <p>
+                Pe baza răspunsurilor tale, acestea sunt cele mai potrivite
+                facultăți pentru tine:
+            </p>
         `;
+
+        top5.forEach((result, index) => {
+
+            resultHTML += `
+                <div class="result-item">
+                    <h3>${index + 1}. ${result.name}</h3>
+
+                    <p>
+                        Compatibilitate:
+                        <strong>${result.percentage}%</strong>
+                    </p>
+
+                    <p>
+                        Punctaj: ${result.score}
+                    </p>
+                </div>
+            `;
+        });
+
+        resultHTML += `
+            <p style="margin-top: 25px;">
+                Rezultatele sunt orientative și se bazează pe răspunsurile
+                oferite în cadrul testului.
+            </p>
+        `;
+
+        document.getElementById("results").innerHTML = resultHTML;
     }
 }
